@@ -1,0 +1,26 @@
+﻿body {
+}
+
+
+.col-md-2 {
+    overflow: hidden;
+}
+
+#navBar {
+    background-color: #346357;
+    /*navbar rengi */
+}
+
+#warning {
+    color: #be3144;
+}
+
+.footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#title {
+    color: #be3144;
+}

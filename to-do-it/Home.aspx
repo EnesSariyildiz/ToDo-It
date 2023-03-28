@@ -1,0 +1,44 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/NavbarMaster.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="to_do_it.Home" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <div class="container col-md-6 col-md-offset-3">
+
+        <div class="mt-5" id="tanitim">
+
+            <%--    Site Tanitimi   --%>
+
+            <%--    hosgeldiniz --%>
+
+            <h4 class="">Hoşgeldiniz.</h4>
+           
+            <%--    TO DO'IT nedir --%>
+
+            <h5 class="mt-4" id="title">"TO DO'IT" Nedir ?</h5>
+            <p class="mt-3">
+                To Do'it bir not alma ve görev yönetimi web sitesidir. Bu web sitesi, insanların günlük hayatlarında yapacakları işleri, alışveriş listelerini, hatırlamaları gerekenleri ve daha pek çok şeyi kolayca not alabilmelerini sağlar.
+            </p>
+            <p class="mt-3">
+                Kullanıcılar notlarını kategorize edebilir, öncelik düzeylerini belirleyebilir ve hatırlatıcılar ekleyebilirler. Böylece, hayatlarında önemli olan şeyleri unutmamalarını ve daha verimli bir şekilde yönetmelerini sağlar.
+            </p>
+            <hr />
+
+            <%--    Neden Sizi Kullanmalıyım ? --%>
+
+             <h5 class="mt-4" id="title">Neden Sizi Kullanmalıyım ?</h5>
+            <p class="mt-3">
+                TO DO'IT, günlük yaşamınızda yapmanız gereken işleri ve görevleri organize etmek için kullanabileceğiniz kullanıcı dostu bir web sitesidir. TO DO'IT ile yapabileceğiniz işlevler arasında, görevlerinizi listeleyebilir, görevlerinize hatırlatıcılar ekleyebilir, görevlerinizi öncelik sırasına göre düzenleyebilir ve tamamlanan görevlerinizi işaretleyebilirsiniz.
+            </p>
+            <p class="mt-3">
+            TO DO'IT, yapılacak işlerinizi organize etmenize ve zamanınızı daha verimli bir şekilde kullanmanıza yardımcı olur. Ayrıca, unutkanlığı önlemenize ve hedeflerinize odaklanmanıza yardımcı olur. TO DO'IT, motivasyonunuzu artırır ve sizi daha üretken hale getirir.
+            </p>
+             <p class="mt-3">
+            TO DO'IT'i kullanarak, işlerinizi planlamak ve kontrol altına almak daha kolay hale gelir. Ayrıca, TO DO'IT'i kullanarak, işlerinizi daha düzenli hale getirir ve zamanınızı daha verimli bir şekilde kullanarak daha fazla iş başarabilirsiniz.
+            </p>
+            <hr />
+        </div>
+        
+    </div>
+</asp:Content>
