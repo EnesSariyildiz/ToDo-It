@@ -67,14 +67,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Contact.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="HomeCss.css" />
     <Content Include="image\checked2.png" />
     <Content Include="image\checked.png" />
-    <Content Include="YeniListe.aspx" />
+    <Content Include="NewList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -82,12 +90,12 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="YeniListe.aspx.cs">
-      <DependentUpon>YeniListe.aspx</DependentUpon>
+    <Compile Include="NewList.aspx.cs">
+      <DependentUpon>NewList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="YeniListe.aspx.designer.cs">
-      <DependentUpon>YeniListe.aspx</DependentUpon>
+    <Compile Include="NewList.aspx.designer.cs">
+      <DependentUpon>NewList.aspx</DependentUpon>
     </Compile>
     <Compile Include="NavbarMaster.Master.cs">
       <DependentUpon>NavbarMaster.Master</DependentUpon>

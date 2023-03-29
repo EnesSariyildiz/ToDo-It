@@ -18,60 +18,70 @@
 </head>
 <body>
     <form id="form1" runat="server">
-       
-                    <%--    navbar  --%>
 
-            <div class="" id="navBar">
-                <div class=" container col-md-6 col-md-offset-3">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand text-white">TO DO'IT </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active ">
-                                    <a class="nav-link text-light" href="Home.aspx">Anasayfa <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">Listelerim</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light" href="YeniListe.aspx">Yeni Liste</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">Hakkımızda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">İletişim</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+        <%--    navbar  --%>
+
+        <div class="" id="navBar">
+            <div class=" container col-md-6 col-md-offset-3">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand text-white">TO DO'IT </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active ">
+                                <a class="nav-link text-light" href="Home.aspx">Anasayfa <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Listelerim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="NewList.aspx">Yeni Liste</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Hakkımızda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="Contact.aspx">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
+        </div>
 
-            <%--    /navbar  --%>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        <%--    /navbar  --%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div>
-           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+
+        <%--    footer  --%>
+        <div class="container col-md-6 col-md-offset-3 fixed-bottom">
+            <footer class="footer">
+                <div>
+                    <p class="text-center">&copy; 2023 Enes Sarıyıldız.</p>
+                </div>
+            </footer>
+        </div>
+        <%--    /footer  --%>
     </form>
 </body>
 </html>
