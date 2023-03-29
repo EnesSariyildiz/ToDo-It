@@ -42,3 +42,13 @@
     box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
 }
 
+#instagram {
+   /* background-image: url('logo.png');*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-indent: -9999px; /* buton metin içeriğini sıfırla */
+    width: 100px;
+    height: 100px;
+    border: none; /* buton kenarlığını kaldır */
+}

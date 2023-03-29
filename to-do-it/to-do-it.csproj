@@ -70,8 +70,11 @@
     <Content Include="Contact.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="HomeCss.css" />
+    <Content Include="HowToUse.aspx" />
     <Content Include="image\checked2.png" />
     <Content Include="image\checked.png" />
+    <Content Include="image\instagram.svg" />
+    <Content Include="image\logo.png" />
     <Content Include="NewList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -89,6 +92,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HowToUse.aspx.cs">
+      <DependentUpon>HowToUse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HowToUse.aspx.designer.cs">
+      <DependentUpon>HowToUse.aspx</DependentUpon>
     </Compile>
     <Compile Include="NewList.aspx.cs">
       <DependentUpon>NewList.aspx</DependentUpon>

@@ -12,19 +12,19 @@
                      <%--    Baslik TextBox'i   --%>
 
                     <div class="form-group">
-                        <asp:TextBox ID="TextBox1" runat="server" class="form-control border-secondary" placeholder="Başlık "></asp:TextBox>
+                        <asp:TextBox ID="TextBox1" runat="server" class="form-control border-secondary" placeholder="Title "></asp:TextBox>
                     </div>
 
                     <%--    Aciklama TextBox'i   --%>
 
                     <div class="form-group mt-4">
-                        <asp:TextBox ID="TextBox2" runat="server" class="form-control border-secondary" placeholder="Açıklama " TextMode="MultiLine"></asp:TextBox>
+                        <asp:TextBox ID="TextBox2" runat="server" class="form-control border-secondary" placeholder="Explanation " TextMode="MultiLine"></asp:TextBox>
                     </div>
 
                     <%--    Kaydet butonu   --%>
 
                     <div class="mt-4">
-                         <asp:Button ID="Button1" runat="server" Text="Kaydet" class="btn btn-secondary float-right" />
+                         <asp:Button ID="Button1" runat="server" Text="Save" class="btn btn-secondary float-right" />
                     </div>
                    
                 </div>
