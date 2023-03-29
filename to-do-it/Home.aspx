@@ -5,9 +5,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    <div class="fixed">
-
-    </div>
     <div class="container col-md-5 col-md-offset-3" id="blog">
 
         <div class="mt-5" id="tanitim">
@@ -19,18 +16,18 @@
             <h1 class="" id="text"><b>Remembering<br />
                 has  never  been easier.</b></h1>
             <p class="mt-2">
-              Our website that will make your life easier is online. You can access it with your phone, tablet or computer.
+                Our website that will make your life easier is online. You can access it with your phone, tablet or computer.
             </p>
 
             <%--    Simdi dene butonu   --%>
 
             <div class="mt-5">
-                <asp:Button ID="tryIt" runat="server" Text="Now try it."  CssClass="btn btn-dark btn-lg " OnClick="tryIt_Click"/>
+                <asp:Button ID="tryIt" runat="server" Text="Now try it." CssClass="btn btn-dark btn-lg " OnClick="tryIt_Click" />
             </div>
 
             <%--    TO DO'IT nedir --%>
 
-            <h4 class="mt-5" id="title"><b> What is "TO DO IT"?</b></h4>
+            <h4 class="mt-5" id="title"><b>What is "TO DO IT"?</b></h4>
             <p class="mt-3">
                 To Do'it bir not alma ve görev yönetimi web sitesidir. Bu web sitesi, insanların günlük hayatlarında yapacakları işleri, alışveriş listelerini, hatırlamaları gerekenleri ve daha pek çok şeyi kolayca not alabilmelerini sağlar.
             </p>
@@ -41,7 +38,7 @@
 
             <%--    Neden Sizi Kullanmalıyım ? --%>
 
-            <h4 class="mt-4" id="title"><b> Why Should I Use ?</b></h4>
+            <h4 class="mt-4" id="title"><b>Why Should I Use ?</b></h4>
             <p class="mt-3">
                 TO DO'IT, günlük yaşamınızda yapmanız gereken işleri ve görevleri organize etmek için kullanabileceğiniz kullanıcı dostu bir web sitesidir. TO DO'IT ile yapabileceğiniz işlevler arasında, görevlerinizi listeleyebilir, görevlerinize hatırlatıcılar ekleyebilir, görevlerinizi öncelik sırasına göre düzenleyebilir ve tamamlanan görevlerinizi işaretleyebilirsiniz.
             </p>
@@ -55,4 +52,13 @@
         </div>
 
     </div>
+    
+    <%--    footer  --%>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">&copy; 2023 Enes Sarıyıldız. Bütün hakları saklıdır.</p>
+        </div>
+    </footer>
+    <%--    /footer  --%>
 </asp:Content>

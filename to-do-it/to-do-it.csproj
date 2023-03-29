@@ -76,6 +76,7 @@
     <Content Include="image\enjoy.gif" />
     <Content Include="image\instagram.svg" />
     <Content Include="image\logo.png" />
+    <Content Include="MyList.aspx" />
     <Content Include="NewList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="HowToUse.aspx.designer.cs">
       <DependentUpon>HowToUse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyList.aspx.cs">
+      <DependentUpon>MyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyList.aspx.designer.cs">
+      <DependentUpon>MyList.aspx</DependentUpon>
     </Compile>
     <Compile Include="NewList.aspx.cs">
       <DependentUpon>NewList.aspx</DependentUpon>
