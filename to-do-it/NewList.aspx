@@ -24,7 +24,7 @@
                     <%--    Kaydet butonu   --%>
 
                     <div class="mt-4">
-                         <asp:Button ID="Button1" runat="server" Text="Save" class="btn btn-dark float-right" />
+                         <asp:Button ID="Button1" runat="server" Text="Save" class="btn btn-dark float-right" OnClick="Button1_Click" />
                     </div>
                    
                 </div>

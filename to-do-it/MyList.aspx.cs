@@ -11,7 +11,14 @@ namespace to_do_it
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Yeni nesne olusturuldu.
+            DataSet1TableAdapters.Tbl_ListsTableAdapter dt = new DataSet1TableAdapters.Tbl_ListsTableAdapter();
+            
+            //dt.ListShow()'dan verileri aliyor.
+            Repeater1.DataSource = dt.ListShow();
 
+            //Verileri alıp goruntuluyor.
+            Repeater1.DataBind();
         }
     }
 }
