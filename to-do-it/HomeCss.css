@@ -7,7 +7,7 @@
 }
 
 #navBar {
-    background-color: #346357;
+    /*background-color: #346357;*/
     /*navbar rengi */
 }
 
@@ -26,4 +26,14 @@
 }
 #form {
     margin-top: 150px;
+}
+
+
+#text {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#tryIt:hover {
+   color:aqua;
+
 }

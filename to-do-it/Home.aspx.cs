@@ -13,5 +13,10 @@ namespace to_do_it
         {
 
         }
+
+        protected void tryIt_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("NewList.aspx");
+        }
     }
 }

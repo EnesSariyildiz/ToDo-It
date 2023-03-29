@@ -22,32 +22,30 @@
         <%--    navbar  --%>
 
         <div class="" id="navBar">
-            <div class=" container col-md-6 col-md-offset-3">
+            <div class=" container col-md-5 col-md-offset-3">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand text-white">TO DO'IT </a>
+                    <a class="navbar-brand text-white"><b>TO DO'IT</b> </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active ">
-                                <a class="nav-link text-light" href="Home.aspx">Anasayfa <span class="sr-only">(current)</span></a>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="Home.aspx">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="#">Listelerim</a>
+                                <a class="nav-link " href="#">My Lists</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="NewList.aspx">Yeni Liste</a>
+                                <a class="nav-link" href="NewList.aspx">New List</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="#">Hakkımızda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="Contact.aspx">İletişim</a>
+                                <a class="nav-link " href="Contact.aspx">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
+                <hr />
             </div>
         </div>
 
