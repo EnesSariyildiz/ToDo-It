@@ -12,12 +12,13 @@
             <%--    Site Tanitimi   --%>
 
             <%--    hosgeldiniz --%>
-
-            <h1 class="" id="text"><b>Remembering<br />
-                has  never  been easier.</b></h1>
-            <p class="mt-2">
-                Our website that will make your life easier is online. You can access it with your phone, tablet or computer.
-            </p>
+            <div class="jumbotron">
+                <h1 class="" id="text"><b>Remembering<br />
+                    has  never  been easier.</b></h1>
+                <p class="mt-2">
+                    Our website that will make your life easier is online. You can access it with your phone, tablet or computer.
+                </p>
+            </div>
 
             <%--    Simdi dene butonu   --%>
 
@@ -52,10 +53,10 @@
         </div>
 
     </div>
-    
+
     <%--    footer  --%>
 
-    <footer class="footer">
+    <footer class="footer text-muted">
         <div class="container">
             <p class="text-center">&copy; 2023 Enes Sarıyıldız. Bütün hakları saklıdır.</p>
         </div>
