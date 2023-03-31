@@ -20,5 +20,13 @@ namespace to_do_it
             //Verileri alıp goruntuluyor.
             Repeater1.DataBind();
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            DataSet1TableAdapters.Tbl_ListsTableAdapter dt = new DataSet1TableAdapters.Tbl_ListsTableAdapter();
+            dt.InsertList(TextBox1.Text, TextBox2.Text);
+            Response.Redirect("MyList.aspx");
+
+        }
     }
 }

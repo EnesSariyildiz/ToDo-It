@@ -4,13 +4,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    
+
+
+
     <div class="container col-md-5 col-md-offset-3">
         <div>
             <div class="mt-5" id="form">
                 <div class="container" style="margin-top: 100px">
 
-                     <%--    Baslik TextBox'i   --%>
+                    <%--    Baslik TextBox'i   --%>
 
                     <div class="form-group">
                         <asp:TextBox ID="TextBox1" runat="server" class="form-control border-secondary" placeholder="Title "></asp:TextBox>
@@ -25,11 +27,10 @@
                     <%--    Kaydet butonu   --%>
 
                     <div class="mt-4">
-                         <asp:Button ID="Button1" runat="server" Text="Save" class="btn btn-dark float-right" OnClick="Button1_Click" />
+                        <asp:Button ID="Button1" runat="server" Text="Save" class="btn btn-dark float-right" OnClick="Button1_Click" />
                     </div>
-                   
+
                 </div>
             </div>
         </div>
-
 </asp:Content>
