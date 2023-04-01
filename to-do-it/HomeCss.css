@@ -53,3 +53,9 @@
     background-color: #f95959;
 }
 
+.link-class {
+    text-decoration: none; /* Çizgiyi kaldırır */
+   
+}
+
+
