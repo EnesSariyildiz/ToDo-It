@@ -28,5 +28,15 @@ namespace to_do_it
             Response.Redirect("MyList.aspx");
 
         }
+
+        protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+
+        }
+
+        protected void Unnamed1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
