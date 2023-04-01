@@ -30,10 +30,10 @@
 
             <h4 class="mt-5" id="title"><b>What is "TO DO IT"?</b></h4>
             <p class="mt-3">
-                To Do'it bir not alma ve görev yönetimi web sitesidir. Bu web sitesi, insanların günlük hayatlarında yapacakları işleri, alışveriş listelerini, hatırlamaları gerekenleri ve daha pek çok şeyi kolayca not alabilmelerini sağlar.
+                To Do'it is a note taking and task management website. This website allows people to easily jot down chores in their daily life, shopping lists, things to remember and more.
             </p>
             <p class="mt-3">
-                Kullanıcılar notlarını kategorize edebilir, öncelik düzeylerini belirleyebilir ve hatırlatıcılar ekleyebilirler. Böylece, hayatlarında önemli olan şeyleri unutmamalarını ve daha verimli bir şekilde yönetmelerini sağlar.
+             Users can categorize their notes, set priority levels, and add reminders. Thus, it enables them not to forget the important things in their lives and to manage them more efficiently.
             </p>
             <hr />
 
@@ -41,13 +41,13 @@
 
             <h4 class="mt-4" id="title"><b>Why Should I Use ?</b></h4>
             <p class="mt-3">
-                TO DO'IT, günlük yaşamınızda yapmanız gereken işleri ve görevleri organize etmek için kullanabileceğiniz kullanıcı dostu bir web sitesidir. TO DO'IT ile yapabileceğiniz işlevler arasında, görevlerinizi listeleyebilir, görevlerinize hatırlatıcılar ekleyebilir, görevlerinizi öncelik sırasına göre düzenleyebilir ve tamamlanan görevlerinizi işaretleyebilirsiniz.
+                TO DO'IT is a user-friendly website that you can use to organize the tasks and tasks you need to do in your daily life. Among the functions you can do with TO DO'IT, you can list your tasks, add reminders to your tasks, prioritize your tasks and mark your completed tasks.
             </p>
             <p class="mt-3">
-                TO DO'IT, yapılacak işlerinizi organize etmenize ve zamanınızı daha verimli bir şekilde kullanmanıza yardımcı olur. Ayrıca, unutkanlığı önlemenize ve hedeflerinize odaklanmanıza yardımcı olur. TO DO'IT, motivasyonunuzu artırır ve sizi daha üretken hale getirir.
+                TO DO'IT helps you organize your to-dos and use your time more efficiently. It also helps you avoid forgetfulness and focus on your goals. TO DO'IT increases your motivation and makes you more productive.
             </p>
             <p class="mt-3">
-                TO DO'IT'i kullanarak, işlerinizi planlamak ve kontrol altına almak daha kolay hale gelir. Ayrıca, TO DO'IT'i kullanarak, işlerinizi daha düzenli hale getirir ve zamanınızı daha verimli bir şekilde kullanarak daha fazla iş başarabilirsiniz.
+                By using TO DO'IT, it becomes easier to plan and control your work. Also, by using TO DO'IT, you can streamline your work and accomplish more by using your time more efficiently.
             </p>
             <hr />
         </div>
@@ -58,7 +58,7 @@
 
     <footer class="footer text-muted">
         <div class="container">
-            <p class="text-center">&copy; 2023 Enes Sarıyıldız. Bütün hakları saklıdır.</p>
+            <p class="text-center">&copy; 2023 Enes Sarıyıldız. All Rights Reserved.</p>
         </div>
     </footer>
     <%--    /footer  --%>
