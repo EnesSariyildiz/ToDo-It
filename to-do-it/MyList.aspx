@@ -18,13 +18,13 @@
             </p>
         </div>
 
-        <%--    liste ekleme    --%>
+        <%--    list add    --%>
 
 
         <div class="mt-5" id="form">
             <div class="" style="margin-top: 100px">
 
-                <%--    Baslik TextBox'i   --%>
+                <%--    title textbox   --%>
 
                 <div class="form-group">
                     <h4 class="mb-3">Enter the title;</h4>
@@ -33,7 +33,7 @@
 
                 </div>
 
-                <%--    Aciklama TextBox'i   --%>
+                <%--    explanatin textbox    --%>
 
                 <div class="form-group mt-4">
                     <h4 class="mb-3">Enter the explanation;</h4>
@@ -41,7 +41,7 @@
                
                 </div>
 
-                <%--    Kaydet butonu   --%>
+                <%--    save button   --%>
 
                 <div class="mt-4">
                     <asp:Button ID="Button1" runat="server" Text="Save" class="btn btn-dark float-right" OnClick="Button1_Click" />
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <%--    /liste ekleme    --%>
+        <%--    /list add    --%>
 
         <h3 class="mt-5">My lists</h3>
         <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand">
@@ -64,7 +64,7 @@
                         </p>
                     </div>
 
-                    <%--    Silme butonu    --%>
+                    <%--    delete button    --%>
 
                     <asp:HyperLink NavigateUrl='<%# "listeSilme.aspx?ID=" + Eval("ID") %>' ID="HyperLink1" runat="server" class="btn btn-outline-danger btn-sm mr-2">Delete</asp:HyperLink>
                 </div>

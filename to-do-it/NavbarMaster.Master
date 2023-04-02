@@ -15,28 +15,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <%--    navbar  --%>
 
         <div class="mt-3" id="navBar">
@@ -66,6 +44,7 @@
 
             </div>
         </div>
+        <hr />
 
         <%--    /navbar  --%>
 

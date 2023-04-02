@@ -9,9 +9,9 @@
 
         <div class="mt-5" id="tanitim">
 
-            <%--    Site Tanitimi   --%>
+            <%--    site welcome   --%>
 
-            <%--    hosgeldiniz --%>
+            <%--    welcome  --%>
             <div class="jumbotron">
                 <h1 class="" id="text"><b>Remembering<br />
                     has  never  been easier.</b></h1>
@@ -20,13 +20,13 @@
                 </p>
             </div>
 
-            <%--    Simdi dene butonu   --%>
+            <%--    now try it   --%>
 
             <div class="mt-5">
                 <asp:Button ID="tryIt" runat="server" Text="Now try it." CssClass="btn btn-dark btn-lg " OnClick="tryIt_Click" />
             </div>
 
-            <%--    TO DO'IT nedir --%>
+            <%--   what is to do it --%>
 
             <h4 class="mt-5" id="title"><b>What is "TO DO IT"?</b></h4>
             <p class="mt-3">
@@ -37,7 +37,7 @@
             </p>
             <hr />
 
-            <%--    Neden Sizi Kullanmalıyım ? --%>
+            <%--    wht sholut ı use  --%>
 
             <h4 class="mt-4" id="title"><b>Why Should I Use ?</b></h4>
             <p class="mt-3">
