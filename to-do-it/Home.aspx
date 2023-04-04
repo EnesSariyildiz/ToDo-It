@@ -12,7 +12,7 @@
             <%--    site welcome   --%>
 
             <%--    welcome  --%>
-            <div class="jumbotron">
+            <div class="jumbotron" onmouseover="changeColor('#ff6f3c')" onmouseout="changeColor('black')">
                 <h1 class="" id="text"><b>Remembering<br />
                     has  never  been easier.</b></h1>
                 <p class="mt-2">
@@ -23,7 +23,7 @@
             <%--    now try it   --%>
 
             <div class="mt-5">
-                <asp:Button ID="tryIt" runat="server" Text="Now try it." CssClass="btn  btn-lg " OnClick="tryIt_Click" />
+                <asp:Button ID="tryIt" runat="server" Text="Now try it." CssClass="btn btn-dark btn-lg " OnClick="tryIt_Click" />
             </div>
 
             <%--   what is to do it --%>

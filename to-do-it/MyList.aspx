@@ -9,9 +9,9 @@
             <h1 class="" id="text"><b>The best cure
                 <br />
                 for sadness is work.</b></h1>
-            <p class="mt-3">
-                <i>- Arthur Conan Doyle</i>
-            </p>
+            <a href="https://tr.wikipedia.org/wiki/Arthur_Conan_Doyle" target="_blank" class="text-dark link-class">
+                <p class="mt-3 " id="githubAccess"><i>- Arthur Conan Doyle</i></p>
+            </a>
         </div>
 
         <%--    list add    --%>
@@ -23,7 +23,7 @@
                 <%--    title textbox   --%>
 
                 <div class="form-group">
-                    <h4 class="mb-3">Enter the title;</h4>
+                    <h5 class="mb-3">Enter the title;</h5>
                     <asp:TextBox ID="TextBox1" runat="server" class="form-control border-secondary" placeholder="Title "></asp:TextBox>
 
 
@@ -32,7 +32,7 @@
                 <%--    explanatin textbox    --%>
 
                 <div class="form-group mt-4">
-                    <h4 class="mb-3">Enter the explanation;</h4>
+                    <h5 class="mb-3">Enter the explanation;</h5>
                     <asp:TextBox ID="TextBox2" runat="server" class="form-control border-secondary" placeholder="Explanation " TextMode="MultiLine"></asp:TextBox>
 
                 </div>
@@ -47,15 +47,21 @@
 
         <%--    /list add    --%>
 
-        <h3 class="mt-5">My lists</h3>
+        <%--    title   --%>
+
+        <div>
+            <h3 class="taskTitle">Tasks</h3>
+        </div>
+        
         <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand">
             <ItemTemplate>
-
                 <div class="mt-5">
-                    <div class="mx-auto">
-                        <h5>
-                            <asp:Label runat="server" Text='<%# Eval("Title") %>'></asp:Label>
-                        </h5>
+                    <div class="mx-auto shadow p-3 mb-5 bg-body rounded" id="myDiv">
+                        <p>
+                            <h5>
+                                <asp:Label runat="server" Text='<%# Eval("Title") %>'></asp:Label>
+                            </h5>
+                        </p>
                         <p class="mt-3">
                             <asp:Label runat="server" Text='<%# Eval("Explanation") %>'></asp:Label>
                         </p>
@@ -63,15 +69,13 @@
 
                     <div>
                         <%--    delete button    --%>
-
                         <asp:HyperLink NavigateUrl='<%# "listeSilme.aspx?ID=" + Eval("ID") %>' ID="HyperLink1" runat="server" class="btn btn-outline-danger btn-sm mr-2">Delete</asp:HyperLink>
+
+                        <%--Completed button--%>
                         <div class="form-check form-switch float-right mb-5">
                             <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Complate</label>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Completed</label>
                         </div>
-                    </div>
-                </div>
-                <hr />
             </ItemTemplate>
         </asp:Repeater>
 

@@ -60,3 +60,8 @@
 #githubAccess:hover {
     color: #ff6f3c;
 }
+
+.taskTitle {
+    margin-top:400px;
+    color:red;
+}

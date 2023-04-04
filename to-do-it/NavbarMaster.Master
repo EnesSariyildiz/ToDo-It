@@ -6,7 +6,7 @@
 <head runat="server">
     <title>TO DO'IT</title>
     <link rel="shortcut icon" type="img/aim.png" href="image/logo.png" />
-    <link href="HomeCss.css" rel="stylesheet" />
+    <link href="Index.css" rel="stylesheet" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -41,7 +41,6 @@
                         </ul>
                     </div>
                 </nav>
-
             </div>
         </div>
         <hr />
@@ -52,6 +51,7 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+        <script src="Index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
