@@ -43,7 +43,7 @@
         <div class="mt-5">
             <div class="mt-3">
                 <a href="https://github.com/EnesSariyildiz/to-do-it" target="_blank" class="text-dark link-class">
-                    <h6>• You can find the source code of this project here.</h6>
+                    <h6>• You can access the source codes of this website on Github.</h6>
                 </a>
                 <img src="image/ExamplelesSourceCode.png" class="rounded-lg mt-3 mb-5" style="width: 750px" />
             </div>
