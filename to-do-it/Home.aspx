@@ -23,7 +23,7 @@
             <%--    now try it   --%>
 
             <div class="mt-5">
-                <asp:Button ID="tryIt" runat="server" Text="Now try it." CssClass="btn btn-dark btn-lg " OnClick="tryIt_Click" />
+                <asp:Button ID="tryIt" runat="server" Text="Now try it." CssClass="btn  btn-lg " OnClick="tryIt_Click" />
             </div>
 
             <%--   what is to do it --%>
