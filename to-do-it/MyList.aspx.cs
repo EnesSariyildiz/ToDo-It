@@ -25,7 +25,7 @@ namespace to_do_it
         {
             DataSet1TableAdapters.Tbl_ListsTableAdapter dt = new DataSet1TableAdapters.Tbl_ListsTableAdapter();
             dt.InsertList(TextBox1.Text, TextBox2.Text);
-            Response.Redirect("MyList.aspx");
+            Response.Redirect("MyList.aspx");      
 
         }
 
