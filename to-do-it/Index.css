@@ -40,6 +40,7 @@
 
 .btn:hover {
     box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    color: #ff6f3c;
 }
 
 .fixed-bottom {
@@ -62,6 +63,6 @@
 }
 
 .taskTitle {
-    margin-top:400px;
-    color:red;
+    margin-top: 100px;
+    margin-left:10px
 }

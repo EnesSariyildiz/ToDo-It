@@ -18,12 +18,12 @@
 
 
         <div class="mt-5" id="form">
-            <div class="" style="margin-top: 100px">
+            <div class="">
 
                 <%--    title textbox   --%>
 
                 <div class="form-group">
-                    <h5 class="mb-3">Enter the title;</h5>
+                    <h5 class="mb-3">Enter the title</h5>
                     <asp:TextBox ID="TextBox1" runat="server" class="form-control border-secondary" placeholder="Title "></asp:TextBox>
 
 
@@ -32,7 +32,7 @@
                 <%--    explanatin textbox    --%>
 
                 <div class="form-group mt-4">
-                    <h5 class="mb-3">Enter the explanation;</h5>
+                    <h5 class="mb-3">Enter the explanation</h5>
                     <asp:TextBox ID="TextBox2" runat="server" class="form-control border-secondary" placeholder="Explanation " TextMode="MultiLine"></asp:TextBox>
 
                 </div>
@@ -50,7 +50,7 @@
         <%--    title   --%>
 
         <div>
-            <h3 class="taskTitle">Tasks</h3>
+            <h3 class="taskTitle"><u> Tasks</u></h3>
         </div>
         
         <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand">
