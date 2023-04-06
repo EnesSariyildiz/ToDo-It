@@ -12,7 +12,7 @@
             <%--    site welcome   --%>
 
             <%--    welcome  --%>
-            <div class="jumbotron" onmouseover="changeColor('#ff6f3c')" onmouseout="changeColor('black')">
+            <div class="" onmouseover="changeColor('#ff6f3c')" onmouseout="changeColor('black')">
                 <h1 class="" id="text"><b>Remembering<br />
                     has  never  been easier.</b></h1>
                 <p class="mt-2">
