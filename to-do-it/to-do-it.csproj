@@ -78,6 +78,7 @@
     <Content Include="image\logo.png" />
     <Content Include="Index.js" />
     <Content Include="listeSilme.aspx" />
+    <Content Include="Login.html" />
     <Content Include="MyList.aspx" />
     <Content Include="NewList.aspx" />
     <Content Include="Web.config" />

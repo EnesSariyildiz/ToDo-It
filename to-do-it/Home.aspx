@@ -7,12 +7,12 @@
 
     <div class="container col-md-5 col-md-offset-3" id="blog">
 
-        <div class="mt-5" id="tanitim">
+        <div class="mt-5 " id="tanitim">
 
             <%--    site welcome   --%>
 
             <%--    welcome  --%>
-            <div class="" onmouseover="changeColor('#ff6f3c')" onmouseout="changeColor('black')">
+            <div class="border border-dark rounded pl-3 pt-3 pb-3" onmouseover="changeColor('#e0ebeb')" onmouseout="changeColor('black')">
                 <h1 class="" id="text"><b>Remembering<br />
                     has  never  been easier.</b></h1>
                 <p class="mt-2">
