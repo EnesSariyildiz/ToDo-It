@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div >
-        <div class="container col-md-5 col-md-offset-3" >
+        <div class="container col-md-5 col-md-offset-3">
 
             <div class="mt-5" id="tanitim">
                 <h1 class="" id="text"><b>The best cure
@@ -26,8 +26,6 @@
                     <div class="form-group">
                         <h5 class="mb-3">Enter the title</h5>
                         <asp:TextBox ID="TextBox1" runat="server" class="form-control border-secondary" placeholder="Title "></asp:TextBox>
-
-
                     </div>
 
                     <%--    explanatin textbox    --%>
