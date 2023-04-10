@@ -11,28 +11,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
+<body class="body">
     <form id="form1" runat="server">
 
-        <div class="form-wrapper">
-            <div class="container col-md-5 col-md-offset-3">
-                <div class="form-group mb-5">
-                    <asp:Label ID="Label2" runat="server" Text="Username"></asp:Label>
-                    <asp:TextBox ID="TextBox4" type="text" runat="server" class="form-control " placeholder="Username "></asp:TextBox>
+        <div class="form-wrapper ">
+            <div class="container col-md-4 col-md-offset-3 border border-dark p-5 rounded">
+
+                <%--username input--%>
+
+                <div class="form-group mb-3">
+                    <h5>Username</h5>
+                    <asp:TextBox ID="TxtUsername" type="text" runat="server" class="form-control mt-2" placeholder="Username "></asp:TextBox>
                 </div>
-                <div class="form-group mb-5">
-                    <asp:Label ID="Label1" runat="server" Text="Password"></asp:Label>
-                    <asp:TextBox ID="TextBox5" type="password" runat="server" class="form-control " placeholder="Password"></asp:TextBox>
+
+                <%--password input--%>
+
+                <div class="form-group mb-3">
+                    <h5>Password</h5>
+                    <asp:TextBox ID="TxtPassword" type="password" runat="server" class="form-control mt-2" placeholder="Password"></asp:TextBox>
                 </div>
-                
-                <asp:Button ID="Button1" class="btn btn-dark float-right" runat="server" Text="Login" />
-           
+
+                <%--login button--%>
+
+                <asp:Button ID="BtnLogin" class="btn btn-dark float-right" runat="server" Text="Login" OnClick="BtnLogin_Click1" />
+
+                <%--warning message--%>
+
+                <asp:Label ID="LblWarning" runat="server" Text="Wrong password & username" CssClass="text-danger"></asp:Label>
             </div>
         </div>
-
-
-
-
 
     </form>
 
