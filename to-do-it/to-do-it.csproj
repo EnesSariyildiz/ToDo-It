@@ -82,6 +82,7 @@
     <Content Include="LoginCss.css" />
     <Content Include="MyList.aspx" />
     <Content Include="NewList.aspx" />
+    <Content Include="NewUser.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +146,13 @@
     </Compile>
     <Compile Include="NavbarMaster.Master.designer.cs">
       <DependentUpon>NavbarMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NewUser.aspx.cs">
+      <DependentUpon>NewUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewUser.aspx.designer.cs">
+      <DependentUpon>NewUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -18,7 +18,7 @@ namespace to_do_it
 
         protected void BtnLogin_Click1(object sender, EventArgs e)
         {
-            // Tüm sayfa doğrulama kontrollerinin geçerli olup olmadığını kontrol eder.
+            //// Tüm sayfa doğrulama kontrollerinin geçerli olup olmadığını kontrol eder.
             if (Page.IsValid)
             {
                 // Doğrulama başarılı, işlem yapabilirsiniz.
@@ -32,11 +32,11 @@ namespace to_do_it
                 }
                 else
                 {
-                    // Kullanıcı adı veya şifre yanlış
+                   
                     LblWarning.Visible = true;
                 }
             }
-            
+
 
         }
     }
