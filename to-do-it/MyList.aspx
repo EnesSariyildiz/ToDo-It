@@ -49,19 +49,21 @@
             <%--    title   --%>
 
             <div>
-                <h3 class="taskTitle"><u>Tasks</u></h3>
+                <h3 class="taskTitle mb-4">Tasks <img src="image/checked.png" width="35" height="35" /></h3> 
             </div>
 
             <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand">
                 <ItemTemplate>
-                    <div class="mt-5">
+                    <div class="">
                         <div class="mx-auto shadow-sm p-3 mb-5 rounded" id="myDiv">
                             <div class="">
                                 <p>
                                     <h5>
                                         <asp:Label runat="server" Text='<%# Eval("Title") %>'></asp:Label>
                                     </h5>
+                                    <hr />
                                 </p>
+                                
                                 <p class="mt-3">
                                     <asp:Label runat="server" Text='<%# Eval("Explanation") %>'></asp:Label>
                                 </p>

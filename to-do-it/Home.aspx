@@ -12,7 +12,7 @@
             <%--    site welcome   --%>
 
             <%--    welcome  --%>
-            <div class="border border-dark rounded pl-3 pt-3 pb-3" onmouseover="changeColor('#e0ebeb')" onmouseout="changeColor('black')">
+            <div class="border border-dark rounded pl-3 pt-3 pb-3" onmouseover="changeColor('#596e79')" onmouseout="changeColor('black')">
                 <h1 class="" id="text"><b>Remembering<br />
                     has  never  been easier.</b></h1>
                 <p class="mt-2">
