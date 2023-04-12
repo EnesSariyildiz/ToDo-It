@@ -26,28 +26,29 @@
                                     <h2 class="fw-bold mb-2 text-uppercase">Welcome</h2>
                                     <p class="text-white-50 mb-5">TO DO'IT</p>
 
-                                    <%--    enter username  --%>
+                                    <%--    Kullanıcı adı  --%>
                                     <div class="form-outline form-white mb-4">
                                         <asp:TextBox ID="TxtUsername" runat="server" class="form-control border-secondary" placeholder="Username"></asp:TextBox>
                                     </div>
-                                     <%--   enter e-mail   --%>
+
+                                     <%--   E-mail   --%>
                                     <div class="form-outline form-white mb-4">
                                         <asp:TextBox ID="TxtEmail" runat="server" class="form-control border-secondary" placeholder="E-mail"></asp:TextBox>
                                     </div>
 
-                                    <%--    enter password  --%>
+                                    <%--   Şifre  --%>
                                     <div class="form-outline form-white mb-4">
                                         <asp:TextBox ID="TxtPassword" runat="server" class="form-control border-secondary" placeholder="Password" type="password"></asp:TextBox>
                                     </div>
 
-                                    <%--sign in button--%> 
+                                    <%--    Kayıt ol butonu--%> 
                                     <asp:Button ID="BtnSignUp" runat="server" Text="Sign in" class="btn btn-outline-light btn-lg px-5 mt-4" type="submit" OnClick="BtnSignUp_Click" />                               
                                 </div>
                                 <div>
                                     <asp:Label ID="LblWarning" runat="server" Text="please fill in the fields" CssClass="text-danger"></asp:Label>
                                 </div>
 
-                                <%--    Back to login page  --%>
+                                <%--    Giriş sayfasına geri dön  --%>
                                 <div>
                                     <p class="mb-0">
                                        <a href="Login.aspx" class="text-white-50 fw-bold"> Back to login page </a>

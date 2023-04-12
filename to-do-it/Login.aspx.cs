@@ -18,23 +18,16 @@ namespace to_do_it
 
         protected void BtnLogin_Click1(object sender, EventArgs e)
         {
-            //// Tüm sayfa doğrulama kontrollerinin geçerli olup olmadığını kontrol eder.
-            if (Page.IsValid)
+            if (string.IsNullOrEmpty(TxtUsername.Text) ||  string.IsNullOrEmpty(TxtPassword.Text))
             {
-                // Doğrulama başarılı, işlem yapabilirsiniz.
-                // Örneğin, kullanıcının giriş bilgilerini doğrulayabilirsiniz.
+                // TextBox'ların boş olup olmadığını kontrol ediyor. Boş ise uyarı yazısı ekliyoruz.
+                LblWarning.Visible = true;
+            }
 
-                // Kullanıcı adı ve şifre kontrolü
-                if (TxtUsername.Text == "admin" && TxtPassword.Text == "1234")
-                {
-                    // Doğrulama başarılı, kullanıcıyı ana sayfaya yönlendirin.
-                    Response.Redirect("Home.aspx");
-                }
-                else
-                {
-                   
-                    LblWarning.Visible = true;
-                }
+            else
+            {
+               // Boş değil ise anasayfa sayfasına kullanıcıyı yönlendiriyoruz.
+                Response.Redirect("Home.aspx");
             }
 
 

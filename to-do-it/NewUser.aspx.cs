@@ -17,22 +17,20 @@ namespace to_do_it
         protected void BtnSignUp_Click(object sender, EventArgs e)
         {
 
-
-
             if (string.IsNullOrEmpty(TxtUsername.Text) || string.IsNullOrEmpty(TxtEmail.Text) || string.IsNullOrEmpty(TxtPassword.Text))
             {
+                // TextBox'ların boş olup olmadığını kontrol ediyor. Boş ise uyarı yazısı ekliyoruz.
                 LblWarning.Visible = true;
             }
+
             else
             {
-                // code to sign up the user
+                // Boş değilse veri tabanına kullanıcıyı ekleme yapıyoruz.
+                DataSet1TableAdapters.Tbl_UsersTableAdapter dt = new DataSet1TableAdapters.Tbl_UsersTableAdapter();
+
+                dt.InsertUsers(TxtUsername.Text, TxtEmail.Text, TxtPassword.Text);
+                Response.Redirect("NewUser.aspx");
             }
-
-
-
-            DataSet1TableAdapters.Tbl_UsersTableAdapter dt = new DataSet1TableAdapters.Tbl_UsersTableAdapter();
-            dt.InsertUsers(TxtUsername.Text, TxtEmail.Text, TxtPassword.Text);
-            Response.Redirect("NewUser.aspx");
 
         }
     }

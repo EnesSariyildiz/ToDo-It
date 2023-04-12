@@ -22,33 +22,32 @@
                             <div class="card-body p-5 text-center">
 
                                 <div class="mb-md-5 mt-md-4 pb-5">
-
                                     <h2 class="fw-bold mb-2 text-uppercase">Welcome</h2>
                                     <p class="text-white-50 mb-5">TO DO'IT</p>
 
-                                    <%--enter username--%>
+                                    <%--    Kullanıcı adı--%>
                                     <div class="form-outline form-white mb-4">
                                         <asp:TextBox ID="TxtUsername" runat="server" class="form-control border-secondary" placeholder="Username "></asp:TextBox>
                                     </div>
 
-                                    <%--enter password--%>
+                                    <%--    Şifre   --%>
                                     <div class="form-outline form-white mb-4">
                                         <asp:TextBox ID="TxtPassword" runat="server" class="form-control border-secondary" placeholder="Password" type="password"></asp:TextBox>
                                     </div>
 
                                     <asp:Button ID="BtnLogin" runat="server" Text="Login" class="btn btn-outline-light btn-lg px-5 mt-4" />
-                                    <p class="small mb-5 pb-lg-2 pt-5"><a class="text-white-50 " href="#!">Forgot password?</a></p>
+
+                                    <%--    Hesap oluşturma   --%>
                                 </div>
                                 <div>
                                     <asp:Label ID="LblWarning" runat="server" Text="please fill in the fields" CssClass="text-danger"></asp:Label>
                                 </div>
-
-                                <%--Don't have an account?--%>
                                 <div>
-                                    <p class="mb-0">
+                                    <p class="">
                                         Don't have an account? <a href="NewUser.aspx" class="text-white-50 fw-bold">Sign Up</a>
                                     </p>
                                 </div>
+
 
                             </div>
                         </div>
