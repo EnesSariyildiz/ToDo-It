@@ -29,7 +29,7 @@ namespace to_do_it
                 DataSet1TableAdapters.Tbl_UsersTableAdapter dt = new DataSet1TableAdapters.Tbl_UsersTableAdapter();
 
                 dt.InsertUsers(TxtUsername.Text, TxtEmail.Text, TxtPassword.Text);
-                Response.Redirect("NewUser.aspx");
+                Response.Redirect("Login.aspx");
             }
 
         }

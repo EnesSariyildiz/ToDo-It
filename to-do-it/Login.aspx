@@ -40,7 +40,7 @@
                                     <%--    Hesap oluşturma   --%>
                                 </div>
                                 <div>
-                                    <asp:Label ID="LblWarning" runat="server" Text="please fill in the fields" CssClass="text-danger"></asp:Label>
+                                    <asp:Label ID="LblWarning" runat="server" Text="Wrong Username and Password" CssClass="text-danger"></asp:Label>
                                 </div>
                                 <div>
                                     <p class="">
