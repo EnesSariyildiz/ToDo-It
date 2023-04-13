@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace to_do_it
 {
@@ -14,21 +15,34 @@ namespace to_do_it
            LblWarning.Visible = false;
         }
 
+        SqlConnection Sqlbaglanti = new SqlConnection(@"Data Source=DESKTOP-T54ECK5;Initial Catalog=DbTodoit;Integrated Security=True");
 
-
-        protected void BtnLogin_Click1(object sender, EventArgs e)
+        protected void BtnLogin_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(TxtUsername.Text) ||  string.IsNullOrEmpty(TxtPassword.Text))
+
+            // Veri tabanı bağlantısını açıyoruz.
+            Sqlbaglanti.Open();
+
+            SqlCommand komut = new SqlCommand("Select * from Tbl_Users where Username=@Username AND Password=@Password", Sqlbaglanti);
+
+            komut.Parameters.AddWithValue("@Username", TxtUsername.Text);
+            komut.Parameters.AddWithValue("@Password", TxtPassword.Text);
+
+            SqlDataReader dr = komut.ExecuteReader();
+
+            if (dr.Read())
             {
-                // TextBox'ların boş olup olmadığını kontrol ediyor. Boş ise uyarı yazısı ekliyoruz.
+                Response.Redirect("Home.aspx");
+            }
+            else
+            {
                 LblWarning.Visible = true;
             }
 
-            else
-            {
-               // Boş değil ise anasayfa sayfasına kullanıcıyı yönlendiriyoruz.
-                Response.Redirect("Home.aspx");
-            }
+            dr.Close(); // SqlDataReader nesnesini kapat
+
+            Sqlbaglanti.Close();
+
 
 
         }

@@ -35,7 +35,7 @@
                                         <asp:TextBox ID="TxtPassword" runat="server" class="form-control border-secondary" placeholder="Password" type="password"></asp:TextBox>
                                     </div>
 
-                                    <asp:Button ID="BtnLogin" runat="server" Text="Login" class="btn btn-outline-light btn-lg px-5 mt-4" />
+                                    <asp:Button ID="BtnLogin" runat="server" Text="Login" class="btn btn-outline-light btn-lg px-5 mt-4" OnClick="BtnLogin_Click" />
 
                                     <%--    Hesap oluşturma   --%>
                                 </div>
