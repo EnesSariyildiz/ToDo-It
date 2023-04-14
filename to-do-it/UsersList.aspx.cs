@@ -13,14 +13,47 @@ namespace to_do_it
     public partial class UsersList : System.Web.UI.Page
     {
 
-        SqlConnection Sqlbaglanti = new SqlConnection(@"Data Source=DESKTOP-T54ECK5;Initial Catalog=DbTodoit;Integrated Security=True");
-        
+        //SqlConnection Sqlbaglanti = new SqlConnection(@"Data Source=DESKTOP-T54ECK5;Initial Catalog=DbTodoit;Integrated Security=True");
+
+
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
             Response.Write(@Session["admin"]);
             //Session["username"] = "kullanici_adi";
-           
+
+            //string username = (string)Session["admin"];
+            //string connectionString = @"Data Source=DESKTOP-T54ECK5;Initial Catalog=DbTodoit;Integrated Security=True";
+            //using (SqlConnection connection = new SqlConnection(connectionString));
+
+            //connection.Open();
+            //string query = "SELECT * FROM Users WHERE username = @username";
+            //SqlCommand command = new SqlCommand(query, connection);
+            //command.Parameters.AddWithValue("@username", username);
+            //SqlDataAdapter adapter = new SqlDataAdapter(command);
+            //DataTable table = new DataTable();
+            //adapter.Fill(table);
+            //users.DataSource = table;
+            //users.DataBind();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             // Veri tabanı bağlantısını açıyoruz.
             //Sqlbaglanti.Open();

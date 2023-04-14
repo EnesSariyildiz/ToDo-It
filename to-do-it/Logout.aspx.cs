@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace to_do_it
 {
-    public partial class NavbarMaster : System.Web.UI.MasterPage
+    public partial class Logout_aspx : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write(@Session["admin"]);
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            Response.Redirect("Home.aspx");
         }
     }
 }

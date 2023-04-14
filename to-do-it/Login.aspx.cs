@@ -36,7 +36,8 @@ namespace to_do_it
             if (dr.Read())
             {
                 Session["admin"] = TxtUsername.Text;
-                Response.Redirect("UsersList.aspx");                
+                //Response.Redirect("UsersList.aspx");
+                Response.Redirect("UsersList.aspx"); 
             }
             else
             {

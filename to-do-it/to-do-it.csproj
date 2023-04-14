@@ -80,6 +80,7 @@
     <Content Include="listeSilme.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="LoginCss.css" />
+    <Content Include="Logout.aspx" />
     <Content Include="MyList.aspx" />
     <Content Include="NewList.aspx" />
     <Content Include="NewUser.aspx" />
@@ -126,6 +127,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="MyList.aspx.cs">
       <DependentUpon>MyList.aspx</DependentUpon>
