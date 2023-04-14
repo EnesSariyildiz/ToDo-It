@@ -60,6 +60,15 @@ namespace to_do_it
         protected global::System.Web.UI.WebControls.Button BtnSignUp;
 
         /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+
+        /// <summary>
         /// LblWarning control.
         /// </summary>
         /// <remarks>
@@ -67,5 +76,14 @@ namespace to_do_it
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LblWarning;
+
+        /// <summary>
+        /// LblWarningAdmin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblWarningAdmin;
     }
 }

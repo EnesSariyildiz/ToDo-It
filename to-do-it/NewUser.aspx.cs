@@ -12,13 +12,14 @@ namespace to_do_it
         protected void Page_Load(object sender, EventArgs e)
         {
             LblWarning.Visible = false;
+            LblWarningAdmin.Visible = false;
         }
 
         protected void BtnSignUp_Click(object sender, EventArgs e)
         {
             if (TxtUsername.Text == "admin")
             {
-                Response.Write("bu kullanıcı adı daha önceden alınmış");
+                LblWarningAdmin.Visible = true;
             }
 
             else if (string.IsNullOrEmpty(TxtUsername.Text) || string.IsNullOrEmpty(TxtEmail.Text) || string.IsNullOrEmpty(TxtPassword.Text))

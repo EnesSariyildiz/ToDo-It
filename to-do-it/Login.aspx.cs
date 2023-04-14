@@ -26,16 +26,32 @@ namespace to_do_it
             // Veri tabanı bağlantısını açıyoruz.
             Sqlbaglanti.Open();
 
+            // Users database sorgu
             SqlCommand komut = new SqlCommand("Select * from tbl_users where username=@Username AND password=@Password", Sqlbaglanti);
+
+            // Admin database sorgu
+            SqlCommand adminKomut = new SqlCommand("Select * from tbl_admin_users where username=@Username AND password=@Password", Sqlbaglanti);
+
 
             komut.Parameters.AddWithValue("@Username", TxtUsername.Text);
             komut.Parameters.AddWithValue("@Password", TxtPassword.Text);
 
+            adminKomut.Parameters.AddWithValue("@Username", TxtUsername.Text);
+            adminKomut.Parameters.AddWithValue("@Password", TxtPassword.Text);
+
             SqlDataReader dr = komut.ExecuteReader();
 
-            if (dr.Read())
+
+            if (TxtUsername.Text=="admin")
+            {
+                Response.Redirect("Admin.aspx");
+            }
+
+
+            else if (dr.Read())
             {
                 Session["admin"] = TxtUsername.Text;
+
                 //Response.Redirect("UsersList.aspx");
                 Response.Redirect("Home.aspx");
             }
