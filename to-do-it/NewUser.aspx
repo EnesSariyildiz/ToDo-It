@@ -45,7 +45,7 @@
                                     <asp:Button ID="BtnSignUp" runat="server" Text="Sign in" class="btn btn-outline-light btn-lg px-5 mt-4" type="submit" OnClick="BtnSignUp_Click" />                               
                                 </div>
                                 <div>
-                                    <asp:Label ID="LblWarning" runat="server" Text="please fill in the fields" CssClass="text-danger"></asp:Label>
+                                    <asp:Label ID="LblWarning" runat="server" Text="Please fill in the fields" CssClass="text-danger"></asp:Label>
                                 </div>
 
                                 <%--    Giriş sayfasına geri dön  --%>

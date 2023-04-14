@@ -11,21 +11,21 @@ namespace to_do_it
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Yeni nesne olusturuldu.
-            DataSet1TableAdapters.Tbl_ListsTableAdapter dt = new DataSet1TableAdapters.Tbl_ListsTableAdapter();
+            ////Yeni nesne olusturuldu.
+            //DataSet1TableAdapters.Tbl_ListsTableAdapter dt = new DataSet1TableAdapters.Tbl_ListsTableAdapter();
             
-            //dt.ListShow()'dan verileri aliyor.
-            Repeater1.DataSource = dt.ListShow();
+            ////dt.ListShow()'dan verileri aliyor.
+            //Repeater1.DataSource = dt.ListShow();
 
-            //Verileri alıp goruntuluyor.
-            Repeater1.DataBind();
+            ////Verileri alıp goruntuluyor.
+            //Repeater1.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            DataSet1TableAdapters.Tbl_ListsTableAdapter dt = new DataSet1TableAdapters.Tbl_ListsTableAdapter();
-            dt.InsertList(TextBox1.Text, TextBox2.Text);
-            Response.Redirect("MyList.aspx");      
+            //DataSet1TableAdapters.Tbl_ListsTableAdapter dt = new DataSet1TableAdapters.Tbl_ListsTableAdapter();
+            //dt.InsertList(TextBox1.Text, TextBox2.Text);
+            //Response.Redirect("MyList.aspx");      
 
         }
 

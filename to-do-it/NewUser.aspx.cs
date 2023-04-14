@@ -26,7 +26,7 @@ namespace to_do_it
             else
             {
                 // Boş değilse veri tabanına kullanıcıyı ekleme yapıyoruz.
-                DataSet1TableAdapters.Tbl_UsersTableAdapter dt = new DataSet1TableAdapters.Tbl_UsersTableAdapter();
+                DataSet1TableAdapters.tbl_usersTableAdapter dt = new DataSet1TableAdapters.tbl_usersTableAdapter();
 
                 dt.InsertUsers(TxtUsername.Text, TxtEmail.Text, TxtPassword.Text);
                 Response.Redirect("Login.aspx");

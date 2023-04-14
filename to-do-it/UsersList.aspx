@@ -46,7 +46,7 @@
 
         <div>
             <h3 class="taskTitle mb-4">Tasks
-                <img src="image/checked.png" width="35" height="35" /></h3>
+                <img src="image/checked2.png" width="35" height="35" /></h3>
         </div>
 
         <asp:Repeater ID="Repeater1" runat="server">

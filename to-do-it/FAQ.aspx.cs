@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace to_do_it
 {
-    public partial class NavbarMaster : System.Web.UI.MasterPage
+    public partial class FAQ : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Response.Write(@Session["admin"]);
+
         }
     }
 }

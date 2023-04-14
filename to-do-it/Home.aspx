@@ -7,7 +7,7 @@
 
     <div class="container col-md-5 col-md-offset-3" id="blog">
 
-        <div class="mt-5 " id="tanitim">
+        <div class="mt-5" id="tanitim">
 
             <%--    Hoşgeldiniz   --%>
 
@@ -45,17 +45,17 @@
             <p class="mt-3">
                 TO DO'IT helps you organize your to-dos and use your time more efficiently. It also helps you avoid forgetfulness and focus on your goals. TO DO'IT increases your motivation and makes you more productive.
             </p>
-            <p class="mt-3">
+            <p class="mt-3 mb-5">
                 By using TO DO'IT, it becomes easier to plan and control your work. Also, by using TO DO'IT, you can streamline your work and accomplish more by using your time more efficiently.
             </p>
-            <hr />
+            <hr class="mb-3" />
         </div>
 
     </div>
 
     <%--    footer  --%>
 
-    <footer class="footer text-muted">
+    <footer class="footer text-muted mb-3">
         <div class="container">
             <p class="text-center">&copy; 2023 Enes Sarıyıldız. All Rights Reserved.</p>
         </div>

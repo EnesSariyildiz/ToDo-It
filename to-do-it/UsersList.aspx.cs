@@ -15,53 +15,12 @@ namespace to_do_it
 
         //SqlConnection Sqlbaglanti = new SqlConnection(@"Data Source=DESKTOP-T54ECK5;Initial Catalog=DbTodoit;Integrated Security=True");
 
-
-
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            Response.Write(@Session["admin"]);
-            //Session["username"] = "kullanici_adi";
-
-            //string username = (string)Session["admin"];
-            //string connectionString = @"Data Source=DESKTOP-T54ECK5;Initial Catalog=DbTodoit;Integrated Security=True";
-            //using (SqlConnection connection = new SqlConnection(connectionString));
-
-            //connection.Open();
-            //string query = "SELECT * FROM Users WHERE username = @username";
-            //SqlCommand command = new SqlCommand(query, connection);
-            //command.Parameters.AddWithValue("@username", username);
-            //SqlDataAdapter adapter = new SqlDataAdapter(command);
-            //DataTable table = new DataTable();
-            //adapter.Fill(table);
-            //users.DataSource = table;
-            //users.DataBind();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // Veri tabanı bağlantısını açıyoruz.
-            //Sqlbaglanti.Open();
-
-            //SqlCommand komut = new SqlCommand("Select * from todolist_users where user_id=@Username", Sqlbaglanti);
-            //DataSet1TableAdapters.todolist_usersTableAdapter dt = new DataSet1TableAdapters.todolist_usersTableAdapter();
-
-            //Response.Redirect("MyList.aspx");
+            //Response.Write(@Session["admin"]);
+            //string username = Session["admin"].ToString();
+         
 
         }
 

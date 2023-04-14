@@ -11,11 +11,11 @@ namespace to_do_it
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int id = Convert.ToInt16(Request.QueryString["ID"]);
+            //int id = Convert.ToInt16(Request.QueryString["ID"]);
             //ID'yi int32 formatına çeviriyor. ve diğe formda olan sorgu değerini buraya taşıyor.
 
-            DataSet1TableAdapters.Tbl_ListsTableAdapter dt = new DataSet1TableAdapters.Tbl_ListsTableAdapter();
-            dt.ListeSilme(Convert.ToInt16(id));
+            //DataSet1TableAdapters.Tbl_ListsTableAdapter dt = new DataSet1TableAdapters.Tbl_ListsTableAdapter();
+            //dt.ListeSilme(Convert.ToInt16(id));
 
             Response.Redirect("MyList.aspx");
         }

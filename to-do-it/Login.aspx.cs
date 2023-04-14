@@ -26,7 +26,7 @@ namespace to_do_it
             // Veri tabanı bağlantısını açıyoruz.
             Sqlbaglanti.Open();
 
-            SqlCommand komut = new SqlCommand("Select * from Tbl_Users where Username=@Username AND Password=@Password", Sqlbaglanti);
+            SqlCommand komut = new SqlCommand("Select * from tbl_users where username=@Username AND password=@Password", Sqlbaglanti);
 
             komut.Parameters.AddWithValue("@Username", TxtUsername.Text);
             komut.Parameters.AddWithValue("@Password", TxtPassword.Text);
@@ -37,7 +37,7 @@ namespace to_do_it
             {
                 Session["admin"] = TxtUsername.Text;
                 //Response.Redirect("UsersList.aspx");
-                Response.Redirect("UsersList.aspx"); 
+                Response.Redirect("Home.aspx");
             }
             else
             {
