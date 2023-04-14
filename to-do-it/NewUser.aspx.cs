@@ -16,8 +16,12 @@ namespace to_do_it
 
         protected void BtnSignUp_Click(object sender, EventArgs e)
         {
+            if (TxtUsername.Text == "admin")
+            {
+                Response.Write("bu kullanıcı adı daha önceden alınmış");
+            }
 
-            if (string.IsNullOrEmpty(TxtUsername.Text) || string.IsNullOrEmpty(TxtEmail.Text) || string.IsNullOrEmpty(TxtPassword.Text))
+            else if (string.IsNullOrEmpty(TxtUsername.Text) || string.IsNullOrEmpty(TxtEmail.Text) || string.IsNullOrEmpty(TxtPassword.Text))
             {
                 // TextBox'ların boş olup olmadığını kontrol ediyor. Boş ise uyarı yazısı ekliyoruz.
                 LblWarning.Visible = true;
