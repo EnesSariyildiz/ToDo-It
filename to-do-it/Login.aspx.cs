@@ -45,13 +45,13 @@ namespace to_do_it
             if (TxtUsername.Text=="admin")
             {
                 Response.Redirect("Admin.aspx");
+              
             }
 
 
             else if (dr.Read())
             {
                 Session["admin"] = TxtUsername.Text;
-
                 //Response.Redirect("UsersList.aspx");
                 Response.Redirect("Home.aspx");
             }

@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
+    <Content Include="AdminDelete.aspx" />
     <Content Include="AdminUsersDelete.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="FAQ.aspx" />
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDelete.aspx.cs">
+      <DependentUpon>AdminDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDelete.aspx.designer.cs">
+      <DependentUpon>AdminDelete.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminUsersDelete.aspx.cs">
       <DependentUpon>AdminUsersDelete.aspx</DependentUpon>
