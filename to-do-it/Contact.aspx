@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="container col-md-5 col-md-offset-3 mt-5">
-        <h4 class="mt-5">• Contact me</h4>
+        <h4 class="mt-5">Contact me</h4>
         <div class="mt-3">
             <div>
                 <asp:TextBox ID="TxtMessageUsername" runat="server" class="form-control" placeHolder="Username"></asp:TextBox>
@@ -16,6 +16,9 @@
             <div class="mt-4">
                 <asp:Button ID="BtnMessageSend" runat="server" Text="Send" class="btn btn-dark" OnClick="BtnMessageSend_Click" />
             </div>
+
+            <%--uyarı mesaji--%>
+            <asp:Label ID="LblWarning" runat="server" Text="Please fill in the blank fields." CssClass="text-danger"></asp:Label>
         </div>
         <hr />
         <div class="mt-5">
