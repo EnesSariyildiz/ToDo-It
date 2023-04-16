@@ -18,7 +18,7 @@ namespace to_do_it
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            Response.Write(@Session["users"]);
+            Response.Write(@Session["admin"]);
             //string username = Session["admin"].ToString();
          
 

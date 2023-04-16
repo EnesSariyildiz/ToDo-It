@@ -27,39 +27,40 @@ namespace to_do_it
             Sqlbaglanti.Open();
 
             // Users database sorgu
-            SqlCommand komut = new SqlCommand("Select * from tbl_users where username=@Username AND password=@Password", Sqlbaglanti);
+            SqlCommand usersKomut = new SqlCommand("Select * from tbl_users where username=@Username AND password=@Password", Sqlbaglanti);
+
 
             // Admin database sorgu
             SqlCommand adminKomut = new SqlCommand("Select * from tbl_admin_users where username=@Username AND password=@Password", Sqlbaglanti);
 
-
-            komut.Parameters.AddWithValue("@Username", TxtUsername.Text);
-            komut.Parameters.AddWithValue("@Password", TxtPassword.Text);
+            usersKomut.Parameters.AddWithValue("@Username", TxtUsername.Text);
+            usersKomut.Parameters.AddWithValue("@Password", TxtPassword.Text);
 
             adminKomut.Parameters.AddWithValue("@Username", TxtUsername.Text);
             adminKomut.Parameters.AddWithValue("@Password", TxtPassword.Text);
 
-            SqlDataReader dr = komut.ExecuteReader();
+            SqlDataReader dr = usersKomut.ExecuteReader();
 
 
-            if (TxtUsername.Text=="admin")
+
+
+            if (TxtUsername.Text == "admin" && TxtPassword.Text == "1111")
             {
+                Session["superadmin"] = TxtUsername.Text;
                 Response.Redirect("Admin.aspx");
-              
             }
 
-
-            else if (dr.Read())
+            if (dr.Read())
             {
+
                 Session["admin"] = TxtUsername.Text;
-                //Response.Redirect("UsersList.aspx");
                 Response.Redirect("Home.aspx");
+
             }
             else
             {
                 LblWarning.Visible = true;
             }
-
             dr.Close(); // SqlDataReader nesnesini kapat
 
             Sqlbaglanti.Close();
