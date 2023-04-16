@@ -5,12 +5,25 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="container col-md-5 col-md-offset-3 mt-5">
-        <h2 class="mt-5">Contact me</h2>
-        <p>You can reach me on my social media accounts below.</p>
-
+        <h4 class="mt-5">• Contact me</h4>
+        <div class="mt-3">
+            <div>
+                <asp:TextBox ID="TxtMessageUsername" runat="server" class="form-control" placeHolder="Username"></asp:TextBox>
+            </div>
+            <div class="mt-4">
+                <asp:TextBox ID="TxtMessage" runat="server" class="form-control" placeHolder="Message"></asp:TextBox>
+            </div>
+            <div class="mt-4">
+                <asp:Button ID="BtnMessageSend" runat="server" Text="Send" class="btn btn-dark" OnClick="BtnMessageSend_Click" />
+            </div>
+        </div>
+        <hr />
+        <div class="mt-5">
+            <h6>• You can reach me on my social media accounts below.</h6>
+        </div>
         <%--    contact --%>
 
-        <div class="row">
+        <div class="row mt-4">
             <div class="col">
                 <a href="https://instagram.com" class="text-white link-class btn btn-dark btn-lg" target="_blank" style="width: 200px;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram mr-2" viewBox="0 0 16 16">
@@ -43,11 +56,12 @@
         <div class="mt-5">
             <div class="mt-3">
                 <a href="https://github.com/EnesSariyildiz/to-do-it" target="_blank" class="text-dark link-class">
-                    <h6 id="githubAccess">• You can access the source codes of this website on Github.</h6>
+                    <h6 id="githubAccess">• You can access the <u> open source</u> codes of this site on Github.</h6>
                 </a>
                 <img src="image/ExamplelesSourceCode.png" class="rounded-lg mt-3 mb-5" style="width: 750px" />
             </div>
 
         </div>
+
     </div>
 </asp:Content>

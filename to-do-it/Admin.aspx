@@ -6,19 +6,49 @@
 
     <div class="container col-md-5 col-md-offset-3" id="blog">
 
+        <div class="mt-5 border border-dark rounded">
+            <div class="p-3">
+                <h5>
+                    <asp:Label ID="Label5" runat="server" Text="Label">Unread Messages 📢</asp:Label>
+                </h5>
+            </div>
+            <hr />
+            <asp:Repeater ID="Repeater2" runat="server">
+                <ItemTemplate>
+                    <div class=" p-3">
+                        <div>
+                            <h6>
+                                <asp:Label ID="Label4" runat="server" Text="Username;"></asp:Label>
+                                <asp:Label ID="LblMessageUsername" runat="server" Text='<%# Eval("username") %>' CssClass="mt-5"></asp:Label>
+
+                            </h6>
+                        </div>
+                        <div class="mt-4">
+                            <p>
+                                <asp:Label ID="LblMessage" runat="server" Text='<%# Eval("message") %>' CssClass="mt-5"></asp:Label>
+                            </p>
+                        </div>
+                        <%--    delete button    --%>
+                        <asp:HyperLink NavigateUrl='<%# "AdminMessageDelete.aspx?ID=" + Eval("ID") %>' ID="HyperLink1" runat="server" class="btn btn-outline-danger btn-sm mr-2">Delete</asp:HyperLink>
+                    </div>
+                    <hr />
+                    
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
 
 
 
         <h4 class="mt-5">User add</h4>
-        <div class="mt-3 border border-dark p-4 rounded mb-5 id="adminDiv">
+        <div class="mt-3 border border-dark p-4 rounded mb-5" id="adminDiv">
 
-              <%--username ekleme--%>
+            <%--username ekleme--%>
             <div>
                 <asp:Label ID="Label1" runat="server" Text="Username"></asp:Label>
                 <br />
                 <asp:TextBox ID="TxtAdminUsername" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
-           
+
             <%--e-mail ekleme--%>
             <div class="mt-5">
                 <asp:Label ID="Label3" runat="server" Text="E-mail"></asp:Label>
@@ -27,18 +57,18 @@
                 <asp:RegularExpressionValidator CssClass="text-danger" ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtAdminEmail" ErrorMessage="Must be in email format" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             </div>
 
-             <%--şifre ekleme--%>
+            <%--şifre ekleme--%>
             <div class="mt-4">
                 <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
                 <br />
                 <asp:TextBox ID="TxtAdminPassword" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
-            
+
             <%--kaydet butonu--%>
             <div class="mt-4">
                 <asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-dark" OnClick="Button1_Click" />
             </div>
-             <asp:Label ID="LblWarning" runat="server" Text="Please fill in the fields." CssClass="text-danger"></asp:Label>
+            <asp:Label ID="LblWarning" runat="server" Text="Please fill in the fields." CssClass="text-danger"></asp:Label>
         </div>
 
 
@@ -78,7 +108,7 @@
 
 
 
-        
+
 
 
 

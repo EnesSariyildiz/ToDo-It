@@ -21,8 +21,13 @@ namespace to_do_it
             Repeater1.DataSource = dt.GetUsers();
             Repeater1.DataBind();
 
+            //Yeni nesne olusturuldu.
+            DataSet1TableAdapters.tbl_admin_messageTableAdapter adminDt = new DataSet1TableAdapters.tbl_admin_messageTableAdapter();
 
+            adminDt.GetAdminMessage();
 
+            Repeater2.DataSource = adminDt.GetAdminMessage();
+            Repeater2.DataBind();
         }
 
         protected void BtnAdminAdd_Click(object sender, EventArgs e)

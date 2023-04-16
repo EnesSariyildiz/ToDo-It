@@ -4,11 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-
     <div class="container col-md-5 col-md-offset-3" id="blog">
 
         <div class="mt-5" id="tanitim">
-
             <%--    Hoşgeldiniz   --%>
 
             <div class="border border-dark rounded pl-3 pt-3 pb-3" onmouseover="changeColor('#596e79')" onmouseout="changeColor('black')">
@@ -32,7 +30,7 @@
                 To Do'it is a note taking and task management website. This website allows people to easily jot down chores in their daily life, shopping lists, things to remember and more.
             </p>
             <p class="mt-3">
-             Users can categorize their notes, set priority levels, and add reminders. Thus, it enables them not to forget the important things in their lives and to manage them more efficiently.
+                Users can categorize their notes, set priority levels, and add reminders. Thus, it enables them not to forget the important things in their lives and to manage them more efficiently.
             </p>
             <hr />
 
@@ -50,7 +48,7 @@
             </p>
             <hr class="mb-3" />
         </div>
-
+        
     </div>
 
     <%--    footer  --%>
