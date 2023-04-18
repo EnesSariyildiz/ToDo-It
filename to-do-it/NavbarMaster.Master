@@ -20,7 +20,7 @@
         <div class="" id="navBar">
             <div class=" container col-md-5 col-md-offset-3 mt-3">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand "><b>TO DO'IT</b> </a>
+                    <a class="navbar-brand" href="Home.aspx"><b>TO DO'IT</b> </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -36,7 +36,7 @@
                                 <a class="nav-link " href="Contact.aspx">Contact</a>
                             </li>
 
-                            <%-- eğer kullanıcı giriş yapmadıysa login linkini göster--%>
+                            <%-- eğer kullanıcı giriş yapmadıysa login linkini göster--%> 
 
                             <% if (Session["admin"] == null)
                                 { %>
@@ -47,10 +47,13 @@
                             else
                             { %>
                             <li class="nav-item">
-                                <a class="nav-link " href="UsersList.aspx">My Tasks</a>
+                                <a class="nav-link" href="UsersList.aspx">My Tasks</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="Logout.aspx">Logout</a>
+                                <a class="nav-link" href="#"><%= Session["admin"] %></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Logout.aspx">Logout</a>
                             </li>
                             <% } %>
                         </ul>
