@@ -6,7 +6,7 @@
 
     <div class="container col-md-5 col-md-offset-3">
 
-        <div class="mt-5" id="tanitim">
+        <div class="mt-5 border border-dark rounded p-5" id="tanitim">
             <h1 class="" id="text"><b>The best cure
                 <br />
                 for sadness is work.</b></h1>
