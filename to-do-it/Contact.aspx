@@ -6,6 +6,8 @@
 
     <div class="container col-md-5 col-md-offset-3 mt-5">
         <h4 class="mt-5">Contact me</h4>
+        
+        <%--İletişim formu--%>
         <div class="mt-3">
             <div>
                 <asp:TextBox ID="TxtMessageUsername" runat="server" class="form-control" placeHolder="Username"></asp:TextBox>
@@ -13,8 +15,9 @@
             <div class="mt-4">
                 <asp:TextBox ID="TxtMessage" runat="server" class="form-control" placeHolder="Message"></asp:TextBox>
             </div>
+            <%--Gönderme butonu--%>
             <div class="mt-4">
-                <asp:Button ID="BtnMessageSend" runat="server" Text="Send" class="btn btn-dark" OnClick="BtnMessageSend_Click" />
+                <asp:Button ID="BtnMessageSend" runat="server" Text="Send" class="btn btn-dark" OnClick="BtnMessageSend_Click" OnClientClick="alert('Your message has been sent.'); return true;"  />
             </div>
 
             <%--uyarı mesaji--%>

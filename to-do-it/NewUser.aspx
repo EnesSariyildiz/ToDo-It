@@ -45,13 +45,15 @@
                                         </div>
 
                                         <%--    Kayıt ol butonu--%>
-                                        <asp:Button ID="BtnSignUp" runat="server" Text="Sign in" class="btn btn-outline-light btn-lg px-5 mt-4" type="submit" OnClick="BtnSignUp_Click" />
+                                        <asp:Button ID="BtnSignUp" runat="server" Text="Sign in" class="btn btn-outline-light btn-lg px-5 mt-4" type="submit" OnClick="BtnSignUp_Click" OnClientClick="alert('Your registration has been made.'); return true;" /> 
+                                    <%--uyarıyı verdikten sonra true dönmesi işleme devam etmek için--%>
                                     </div>
                                     <asp:RegularExpressionValidator CssClass="text-danger" ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtEmail" ErrorMessage="Must be in email format" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
 
                                     <div>
                                         <asp:Label ID="LblWarning" runat="server" Text="Please fill in the fields." CssClass="text-danger"></asp:Label>
                                         <asp:Label ID="LblWarningAdmin" runat="server" Text="Please choose a different username." CssClass="text-danger"></asp:Label>
+                                         <%--<asp:Label ID="LblUserWarning" runat="server" Text="This username and e-mail are used." CssClass="text-danger"></asp:Label>--%>
                                     </div>
 
                                     <%--    Giriş sayfasına geri dön  --%>
