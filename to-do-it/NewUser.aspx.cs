@@ -12,8 +12,7 @@ namespace to_do_it
         protected void Page_Load(object sender, EventArgs e)
         {
             LblWarning.Visible = false;
-            LblWarningAdmin.Visible = false;
-            
+            LblWarningAdmin.Visible = false;        
         }
         
 
@@ -28,11 +27,11 @@ namespace to_do_it
             {
                 // TextBox'ların boş olup olmadığını kontrol ediyor. Boş ise uyarı yazısı ekliyoruz.
                 LblWarning.Visible = true;
+                
             }            
             else
             {
                 // Boş değilse veri tabanına kullanıcıyı ekleme yapıyoruz.
-                //DataSet1TableAdapters.tbl_usersTableAdapter dt = new DataSet1TableAdapters.tbl_usersTableAdapter();
                 DataSet1TableAdapters.tbl_usersTableAdapter dt = new DataSet1TableAdapters.tbl_usersTableAdapter();
                 dt.InsertUsers(TxtUsername.Text, TxtEmail.Text, TxtPassword.Text);
                 Response.Redirect("Login.aspx");

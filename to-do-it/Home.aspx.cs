@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.SessionState;
 
 namespace to_do_it
 {
@@ -11,7 +12,8 @@ namespace to_do_it
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write(@Session["admin"]);
+            //Response.Write(@Session["admin"]);
+            // Kontrol amaçlı ekrana admini yazdırıyoruz.
         }
 
         protected void tryIt_Click(object sender, EventArgs e)

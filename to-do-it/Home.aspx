@@ -23,6 +23,30 @@
                 <asp:Button ID="tryIt" runat="server" Text="Now try it." CssClass="btn btn-dark btn-lg" OnClick="tryIt_Click" />
             </div>
 
+            <%--kullanıcı username--%>
+
+            <div class="mt-5 ">
+                <h4>
+                    <% if (Session["admin"] == null)
+                        { %>
+                    <% }
+                        else
+                        {
+                    %>
+                    <b>" Welcome
+                   
+                    <%= Session["admin"] %>
+                         how can i help? "
+                          <hr />
+                        <% } %>
+                       
+                    </b>
+                </h4>
+              
+
+            </div>
+
+
             <%--   To do it nedir --%>
 
             <h4 class="mt-5" id="title"><b>What is "TO DO IT"?</b></h4>
@@ -48,7 +72,7 @@
             </p>
             <hr class="mb-3" />
         </div>
-        
+
     </div>
 
     <%--    footer  --%>
