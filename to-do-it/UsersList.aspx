@@ -24,14 +24,14 @@
 
                 <div class="form-group">
                     <h5 class="mb-3">Enter the title</h5>
-                    <asp:TextBox ID="TextBox1" runat="server" class="form-control border-secondary" placeholder="Title "></asp:TextBox>
+                    <asp:TextBox ID="txtTitle" runat="server" class="form-control border-secondary" placeholder="Title "></asp:TextBox>
                 </div>
 
                 <%--    açıklama textbox    --%>
 
                 <div class="form-group mt-4">
                     <h5 class="mb-3">Enter the explanation</h5>
-                    <asp:TextBox ID="TextBox2" runat="server" class="form-control border-secondary" placeholder="Explanation " TextMode="MultiLine"></asp:TextBox>
+                    <asp:TextBox ID="txtDesc" runat="server" class="form-control border-secondary" placeholder="Description " TextMode="MultiLine"></asp:TextBox>
                 </div>
 
                 <%--    kaydet button   --%>
@@ -54,9 +54,9 @@
                 <div class="">
                     <div class="mx-auto shadow-sm p-3 mb-5 rounded" id="myDiv">
                         <div class="">
-                            <p class="mt-3">
+                           <%-- <p class="mt-3">
                                 <asp:Label runat="server" Text='<%# Eval("user_id") %>'></asp:Label>
-                            </p>
+                            </p>--%>
                             <p>
                                 <h5>
                                     <asp:Label runat="server" Text='<%# Eval("title") %>'></asp:Label>
@@ -65,12 +65,12 @@
                             </p>
 
                             <p class="mt-3">
-                                <asp:Label runat="server" Text='<%# Eval("explanation") %>'></asp:Label>
+                                <asp:Label runat="server" Text='<%# Eval("description") %>'></asp:Label>
                             </p>
                         </div>
 
                         <%--    silme button    --%>
-                        <asp:HyperLink NavigateUrl='<%# "listeSilme.aspx?ID=" + Eval("ID") %>' ID="HyperLink1" runat="server" class="btn btn-outline-danger btn-sm mr-2">Delete</asp:HyperLink>
+                        <asp:HyperLink NavigateUrl='<%# "listeSilme.aspx?ID=" + Eval("id") %>' ID="HyperLink1" runat="server" class="btn btn-outline-danger btn-sm mr-2">Delete</asp:HyperLink>
 
                         <%--tamamlama button--%>
                         <div class="form-check form-switch float-right mb-5">

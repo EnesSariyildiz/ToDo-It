@@ -19,17 +19,32 @@ namespace to_do_it
         {
 
             Response.Write(@Session["admin"]);
-            //string username = Session["admin"].ToString();
-         
+            LoadTasks();
+
 
         }
 
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //DataSet1TableAdapters.Tbl_UsersListTableAdapter dt = new DataSet1TableAdapters.Tbl_UsersListTableAdapter();
-            //dt.InsertUsersList(TextBox1.Text, TextBox2.Text, TextBox3.Text);
-            //Response.Redirect("UsersList.aspx");
+            DataSet1TableAdapters.tbl_users_listTableAdapter dt = new DataSet1TableAdapters.tbl_users_listTableAdapter();
+            
+            int userId = (int)Session["userId"];
+
+            dt.InsertUserListQuery(userId, txtTitle.Text, txtDesc.Text);
+            Response.Redirect("UsersList.aspx");
+        }
+
+        private void LoadTasks()
+        {
+            DataSet1TableAdapters.tbl_users_listTableAdapter dt = new DataSet1TableAdapters.tbl_users_listTableAdapter();
+
+            int userId = (int)Session["userId"];
+
+            var data = dt.GetUsersList(userId);
+            Repeater1.DataSource = data;
+            Repeater1.DataBind();
+
         }
     }
 }
