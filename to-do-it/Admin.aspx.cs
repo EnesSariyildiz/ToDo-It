@@ -36,9 +36,6 @@ namespace to_do_it
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //DataSet1TableAdapters.tbl_admin_usersTableAdapter dt = new DataSet1TableAdapters.tbl_admin_usersTableAdapter();
-            //dt.InsertAdminUsers(TxtAdminUsername.Text, TxtAdminPassword.Text);
-            //Response.Redirect("Admin.aspx");
 
             if (string.IsNullOrEmpty(TxtAdminUsername.Text) || string.IsNullOrEmpty(TxtAdminEmail.Text) || string.IsNullOrEmpty(TxtAdminPassword.Text))
             {
@@ -55,6 +52,18 @@ namespace to_do_it
                 Response.Redirect("Admin.aspx");
             }
 
+        }
+
+        protected void txtClear_Click(object sender, EventArgs e)
+        {
+            TxtClear();
+        }
+
+        private void TxtClear()
+        {
+            TxtAdminUsername.Text = " ";
+            TxtAdminPassword.Text = " ";
+            TxtAdminEmail.Text = " ";
         }
     }
 }

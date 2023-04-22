@@ -33,10 +33,10 @@
                         else
                         {
                     %>
-                    <b>" Welcome
+                    <b>"Welcome
                    
                     <%= Session["admin"] %>
-                         how can i help? "
+                         how can i help ?"
                           <hr />
                         <% } %>
                        

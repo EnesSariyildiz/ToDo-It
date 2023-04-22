@@ -13,22 +13,21 @@ namespace to_do_it
     public partial class UsersList : System.Web.UI.Page
     {
 
-        //SqlConnection Sqlbaglanti = new SqlConnection(@"Data Source=DESKTOP-T54ECK5;Initial Catalog=DbTodoit;Integrated Security=True");
-
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            Response.Write(@Session["admin"]);
             LoadTasks();
-
-
         }
 
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            addList();
+        }
+
+        private void addList()
+        {
             DataSet1TableAdapters.tbl_users_listTableAdapter dt = new DataSet1TableAdapters.tbl_users_listTableAdapter();
-            
+
             int userId = (int)Session["userId"];
 
             dt.InsertUserListQuery(userId, txtTitle.Text, txtDesc.Text);

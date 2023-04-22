@@ -36,7 +36,7 @@
                                 <a class="nav-link " href="Contact.aspx">Contact</a>
                             </li>
 
-                            <%-- eğer kullanıcı giriş yapmadıysa login linkini göster--%> 
+                            <%-- eğer kullanıcı giriş yapmadıysa login linkini göster--%>
 
                             <% if (Session["admin"] == null)
                                 { %>
@@ -44,17 +44,18 @@
                                 <a class="nav-link" href="Login.aspx">Login</a>
                             </li>
                             <% }
-                            else
-                            { %>
+                                else
+                                { %>
                             <li class="nav-item">
                                 <a class="nav-link" href="UsersList.aspx">Tasks</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><%= Session["admin"] %></a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="Logout.aspx">Logout</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><%= Session["admin"] %></a>
+                            </li>
+
                             <% } %>
                         </ul>
                     </div>

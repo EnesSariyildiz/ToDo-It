@@ -10,10 +10,10 @@
         <%--İletişim formu--%>
         <div class="mt-3">
             <div>
-                <asp:TextBox ID="TxtMessageUsername" runat="server" class="form-control" placeHolder="Username"></asp:TextBox>
+                <asp:TextBox ID="TxtMessageUsername" runat="server" class="form-control" placeHolder="Username" autocomplete="off"></asp:TextBox>
             </div>
             <div class="mt-4">
-                <asp:TextBox ID="TxtMessage" runat="server" class="form-control" placeHolder="Message"></asp:TextBox>
+                <asp:TextBox ID="TxtMessage" runat="server" class="form-control" placeHolder="Message" autocomplete="off"></asp:TextBox>
             </div>
             <%--Gönderme butonu--%>
             <div class="mt-4">

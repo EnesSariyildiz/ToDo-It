@@ -202,9 +202,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
-    <Content Include="AdminDelete.aspx" />
     <Content Include="AdminMessageDelete.aspx" />
-    <Content Include="AdminUsersDelete.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="FAQ.aspx" />
     <Content Include="Home.aspx" />
@@ -220,8 +218,7 @@
     <Content Include="Login.aspx" />
     <Content Include="LoginCss.css" />
     <Content Include="Logout.aspx" />
-    <Content Include="MyList.aspx" />
-    <Content Include="NewList.aspx" />
+    <Content Include="Deneme.aspx" />
     <Content Include="NewUser.aspx" />
     <Content Include="UsersList.aspx" />
     <Content Include="Web.config" />
@@ -234,26 +231,12 @@
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminDelete.aspx.cs">
-      <DependentUpon>AdminDelete.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AdminDelete.aspx.designer.cs">
-      <DependentUpon>AdminDelete.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AdminMessageDelete.aspx.cs">
       <DependentUpon>AdminMessageDelete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminMessageDelete.aspx.designer.cs">
       <DependentUpon>AdminMessageDelete.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AdminUsersDelete.aspx.cs">
-      <DependentUpon>AdminUsersDelete.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AdminUsersDelete.aspx.designer.cs">
-      <DependentUpon>AdminUsersDelete.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -309,19 +292,12 @@
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MyList.aspx.cs">
-      <DependentUpon>MyList.aspx</DependentUpon>
+    <Compile Include="Deneme.aspx.cs">
+      <DependentUpon>Deneme.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MyList.aspx.designer.cs">
-      <DependentUpon>MyList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NewList.aspx.cs">
-      <DependentUpon>NewList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NewList.aspx.designer.cs">
-      <DependentUpon>NewList.aspx</DependentUpon>
+    <Compile Include="Deneme.aspx.designer.cs">
+      <DependentUpon>Deneme.aspx</DependentUpon>
     </Compile>
     <Compile Include="NavbarMaster.Master.cs">
       <DependentUpon>NavbarMaster.Master</DependentUpon>
