@@ -18,10 +18,10 @@
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                        <div class="card bg-dark text-white shadow-lg" style="border-radius: 1rem;">
+                        <div class="card  text-white shadow-lg" style="border-radius: 1rem;" id="login">
                             <div class="card-body p-5 text-center">
 
-                                <div class="mb-md-5 mt-md-4 pb-5">
+                                <div class="mb-md-5 mt-md-4 pb-5" >
                                     <h2 class="fw-bold mb-2 text-uppercase">Welcome</h2>
                                     <p class="text-white-50 mb-5">TO DO'IT</p>
 
@@ -45,6 +45,9 @@
                                 <div>
                                     <p class="">
                                         Don't have an account? <a href="NewUser.aspx" class="text-white-50 fw-bold">Sign Up</a>
+                                    </p>
+                                    <p class="">
+                                        <a href="Home.aspx" class="text-white-50 fw-bold">Back to Home Page</a>
                                     </p>
                                 </div>
 

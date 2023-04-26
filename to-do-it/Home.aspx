@@ -9,7 +9,7 @@
         <div class="mt-5" id="tanitim">
             <%--    Hoşgeldiniz   --%>
 
-            <div class="border border-dark rounded pl-3 pt-3 pb-3" onmouseover="changeColor('#596e79')" onmouseout="changeColor('black')">
+            <div class="border border-dark rounded pl-3 pt-3 pb-3" onmouseover="changeColor('#596e79')" onmouseout="changeColor('#dfcdc3')">
                 <h1 class="" id="text"><b>Remembering<br />
                     has  never  been easier.</b></h1>
                 <p class="mt-2">
@@ -33,14 +33,14 @@
                         else
                         {
                     %>
-                    <b>"Welcome
-                   
-                    <%= Session["admin"] %>
-                         how can i help ?"
+                    Welcome              
+                    <%= Session["admin"] %> 
+                        
+                         how can i help ?
                           <hr />
                         <% } %>
                        
-                    </b>
+                    
                 </h4>
               
 
@@ -49,7 +49,7 @@
 
             <%--   To do it nedir --%>
 
-            <h4 class="mt-5" id="title"><b>What is "TO DO IT"?</b></h4>
+            <h4 class="title-todo mt-5" id=""><b>What is "TO DO IT"?</b></h4>
             <p class="mt-3">
                 To Do'it is a note taking and task management website. This website allows people to easily jot down chores in their daily life, shopping lists, things to remember and more.
             </p>
@@ -60,7 +60,7 @@
 
             <%--    neden kullanmalıyım  --%>
 
-            <h4 class="mt-4" id="title"><b>Why Should I Use ?</b></h4>
+            <h4 class="title-todo mt-4" id="title"><b>Why Should I Use ?</b></h4>
             <p class="mt-3">
                 TO DO'IT is a user-friendly website that you can use to organize the tasks and tasks you need to do in your daily life. Among the functions you can do with TO DO'IT, you can list your tasks, add reminders to your tasks, prioritize your tasks and mark your completed tasks.
             </p>
@@ -77,7 +77,7 @@
 
     <%--    footer  --%>
 
-    <footer class="footer text-muted mb-3">
+    <footer class="footer text-muted mb-3" id="footer">
         <div class="container">
             <p class="text-center">&copy; 2023 Enes Sarıyıldız. All Rights Reserved.</p>
         </div>

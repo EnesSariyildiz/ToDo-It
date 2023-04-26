@@ -23,21 +23,21 @@
                 <%--    başlık textbox   --%>
 
                 <div class="form-group">
-                    <h5 class="mb-3">Enter the title</h5>
-                    <asp:TextBox ID="txtTitle" runat="server" class="form-control border-secondary" placeholder="Title "></asp:TextBox>
+                    <h5 class="mb-3">Title</h5>
+                    <asp:TextBox ID="txtTitle" runat="server" class="form-control border-secondary" placeholder="enter the title "></asp:TextBox>
                 </div>
 
                 <%--    açıklama textbox    --%>
 
                 <div class="form-group mt-4">
-                    <h5 class="mb-3">Enter the explanation</h5>
-                    <asp:TextBox ID="txtDesc" runat="server" class="form-control border-secondary" placeholder="Description " TextMode="MultiLine"></asp:TextBox>
+                    <h5 class="mb-3">Description</h5>
+                    <asp:TextBox ID="txtDesc" runat="server" class="form-control border-secondary" placeholder="enter the description " TextMode="MultiLine"></asp:TextBox>
                 </div>
 
                 <%--    kaydet button   --%>
 
                 <div class="mt-4">
-                    <asp:Button ID="Button1" runat="server" Text="Save" class="btn btn-dark float-right" OnClick="Button1_Click" />
+                    <asp:Button ID="Button1" runat="server" Text="Save" class="btn btn-outline-dark float-right" OnClick="Button1_Click" />
                 </div>
             </div>
         </div>
@@ -46,17 +46,14 @@
 
         <div>
             <h3 class="taskTitle mb-4">Tasks
-                <img src="image/checked2.png" width="35" height="35" /></h3>
+                <img src="image/list.png" width="35" height="35" /></h3>
         </div>
 
         <asp:Repeater ID="Repeater1" runat="server">
             <ItemTemplate>
                 <div class="">
-                    <div class="mx-auto shadow-sm p-3 mb-5 rounded" id="myDiv">
+                    <div class="shadow p-3 mb-5  rounded" id="myDiv">
                         <div class="">
-                           <%-- <p class="mt-3">
-                                <asp:Label runat="server" Text='<%# Eval("user_id") %>'></asp:Label>
-                            </p>--%>
                             <p>
                                 <h5>
                                     <asp:Label runat="server" Text='<%# Eval("title") %>'></asp:Label>

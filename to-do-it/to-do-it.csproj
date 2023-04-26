@@ -206,6 +206,7 @@
     <Content Include="Contact.aspx" />
     <Content Include="FAQ.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="image\list.png" />
     <Content Include="Index.css" />
     <Content Include="HowToUse.aspx" />
     <Content Include="image\checked2.png" />

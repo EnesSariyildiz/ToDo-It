@@ -11,10 +11,10 @@ namespace to_do_it
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            loadAdmin();
+            LoadAdmin();
         }
 
-        public void loadAdmin()
+        public void LoadAdmin()
         {
             Response.Write(@Session["superadmin"]);
 
