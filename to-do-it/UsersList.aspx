@@ -70,7 +70,7 @@
                         </div>
 
                         <%--    silme button    --%>
-                        <asp:HyperLink NavigateUrl='<%# "listeSilme.aspx?ID=" + Eval("id") %>' ID="HyperLink1" runat="server" class="btn btn-outline-danger btn-sm mr-2">Delete</asp:HyperLink>
+                        <asp:HyperLink NavigateUrl='<%# "DeleteList.aspx?ID=" + Eval("id") %>' ID="HyperLink1" runat="server" class="btn btn-outline-danger btn-sm mr-2">Delete</asp:HyperLink>
 
                         <%--tamamlama button--%>
                         <div class="form-check form-switch float-right mb-5">

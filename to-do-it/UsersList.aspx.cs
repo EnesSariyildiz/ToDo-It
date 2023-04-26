@@ -21,10 +21,10 @@ namespace to_do_it
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            addList();
+            AddList();
         }
 
-        private void addList()
+        private void AddList()
         {
             DataSet1TableAdapters.tbl_users_listTableAdapter dt = new DataSet1TableAdapters.tbl_users_listTableAdapter();
 

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="listeSilme.aspx.cs" Inherits="to_do_it.listeSilme" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DeleteList.aspx.cs" Inherits="to_do_it.listeSilme" %>
 
 <!DOCTYPE html>
 

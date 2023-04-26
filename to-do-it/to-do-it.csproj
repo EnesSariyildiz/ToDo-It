@@ -214,11 +214,10 @@
     <Content Include="image\ExamplelesSourceCode.png" />
     <Content Include="image\logo.png" />
     <Content Include="Index.js" />
-    <Content Include="listeSilme.aspx" />
+    <Content Include="DeleteList.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="LoginCss.css" />
     <Content Include="Logout.aspx" />
-    <Content Include="Deneme.aspx" />
     <Content Include="NewUser.aspx" />
     <Content Include="UsersList.aspx" />
     <Content Include="Web.config" />
@@ -271,12 +270,12 @@
     <Compile Include="HowToUse.aspx.designer.cs">
       <DependentUpon>HowToUse.aspx</DependentUpon>
     </Compile>
-    <Compile Include="listeSilme.aspx.cs">
-      <DependentUpon>listeSilme.aspx</DependentUpon>
+    <Compile Include="DeleteList.aspx.cs">
+      <DependentUpon>DeleteList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="listeSilme.aspx.designer.cs">
-      <DependentUpon>listeSilme.aspx</DependentUpon>
+    <Compile Include="DeleteList.aspx.designer.cs">
+      <DependentUpon>DeleteList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -291,13 +290,6 @@
     </Compile>
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Deneme.aspx.cs">
-      <DependentUpon>Deneme.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Deneme.aspx.designer.cs">
-      <DependentUpon>Deneme.aspx</DependentUpon>
     </Compile>
     <Compile Include="NavbarMaster.Master.cs">
       <DependentUpon>NavbarMaster.Master</DependentUpon>

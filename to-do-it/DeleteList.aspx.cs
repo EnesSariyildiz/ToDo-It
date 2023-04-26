@@ -11,6 +11,11 @@ namespace to_do_it
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            deleteList();
+        }
+        
+        public void deleteList()
+        {
             int id = Convert.ToInt16(Request.QueryString["id"]);
             //ID'yi int32 formatına çeviriyor. ve diğe formda olan sorgu değerini buraya taşıyor.
 

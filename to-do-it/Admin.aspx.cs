@@ -11,6 +11,11 @@ namespace to_do_it
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            loadAdmin();
+        }
+
+        public void loadAdmin()
+        {
             Response.Write(@Session["superadmin"]);
 
             LblWarning.Visible = false;
@@ -28,10 +33,6 @@ namespace to_do_it
 
             Repeater2.DataSource = adminDt.GetAdminMessage();
             Repeater2.DataBind();
-        }
-
-        protected void BtnAdminAdd_Click(object sender, EventArgs e)
-        {
         }
 
         protected void Button1_Click(object sender, EventArgs e)

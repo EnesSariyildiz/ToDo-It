@@ -50,12 +50,11 @@
                                 <a class="nav-link" href="UsersList.aspx">Tasks</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Logout.aspx">Logout</a>
+                                <a class="nav-link" ><%= Session["admin"] %></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><%= Session["admin"] %></a>
-                            </li>
-
+                                <a class="nav-link" href="Logout.aspx">Logout</a>
+                            </li>            
                             <% } %>
                         </ul>
                     </div>

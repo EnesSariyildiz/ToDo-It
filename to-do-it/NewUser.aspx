@@ -45,7 +45,7 @@
                                         </div>
 
                                         <%--    Kayıt ol butonu--%>
-                                        <asp:Button ID="BtnSignUp" runat="server" Text="Sign in" class="btn btn-outline-light btn-lg px-5 mt-4" type="submit" OnClick="BtnSignUp_Click" <%--OnClientClick="alert('Your registration has been made.'); return true;--%>" /> 
+                                        <asp:Button ID="BtnSignUp" runat="server" Text="Sign in" class="btn btn-outline-light btn-lg px-5 mt-4" type="submit" OnClick="BtnSignUp_Click" /> 
                                     <%--uyarıyı verdikten sonra true dönmesi işleme devam etmek için--%>
                                     </div>
                                     <asp:RegularExpressionValidator CssClass="text-danger" ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtEmail" ErrorMessage="Must be in email format" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
