@@ -4,29 +4,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="container col-md-5 col-md-offset-3 mt-5">
-        <h4 class="mt-5">Contact me</h4>
-        
-        <%--İletişim formu--%>
-        <div class="mt-3">
-            <div>
-                <asp:TextBox ID="TxtMessageUsername" runat="server" class="form-control" placeHolder="Username" autocomplete="off"></asp:TextBox>
-            </div>
-            <div class="mt-4">
-                <asp:TextBox ID="TxtMessage" runat="server" class="form-control" placeHolder="Message" autocomplete="off"></asp:TextBox>
-            </div>
-            <%--Gönderme butonu--%>
-            <div class="mt-4">
-                <asp:Button ID="BtnMessageSend" runat="server" Text="Send" class="btn btn-dark" OnClick="BtnMessageSend_Click" OnClientClick="alert('Your message has been sent.'); return true;"  />
-            </div>
-
-            <%--uyarı mesaji--%>
-            <asp:Label ID="LblWarning" runat="server" Text="Please fill in the blank fields." CssClass="text-danger"></asp:Label>
-        </div>
-        <hr />
+    <div class="container col-md-5 col-md-offset-3 mt-5" id="contact">
         <div class="mt-5">
             <h6>• You can reach me on my social media accounts below.</h6>
         </div>
+
         <%--    contact --%>
 
         <div class="row mt-4">
@@ -62,11 +44,28 @@
         <div class="mt-5">
             <div class="mt-3">
                 <a href="https://github.com/EnesSariyildiz/to-do-it" target="_blank" class="text-dark link-class">
-                    <h6 id="githubAccess">• You can access the <u> open source</u> codes of this site on Github.</h6>
+                    <h6 id="githubAccess">• You can access the <u>open source</u> codes of this site on Github.</h6>
                 </a>
                 <img src="image/ExamplelesSourceCode.png" class="rounded-lg mt-3 mb-5" style="width: 750px" />
             </div>
+        </div>
 
+        <%--İletişim formu--%>
+        <h4 class="mt-4">Contact us</h4>
+        <div class="mt-3">
+            <div>
+                <asp:TextBox ID="TxtMessageUsername" runat="server" class="form-control" placeHolder="Username" autocomplete="off"></asp:TextBox>
+            </div>
+            <div class="mt-4">
+                <asp:TextBox ID="TxtMessage" runat="server" class="form-control" placeHolder="Message" autocomplete="off"></asp:TextBox>
+            </div>
+            <%--Gönderme butonu--%>
+            <div class="mt-4">
+                <asp:Button ID="BtnMessageSend" runat="server" Text="Send" class="btn btn-dark" OnClick="BtnMessageSend_Click" OnClientClick="alert('Your message has been sent.'); return true;" />
+            </div>
+
+            <%--uyarı mesaji--%>
+            <asp:Label ID="LblWarning" runat="server" Text="Please fill in the blank fields." CssClass="text-danger"></asp:Label>
         </div>
 
     </div>

@@ -16,7 +16,7 @@ namespace to_do_it
 
         public void LoadAdmin()
         {
-            Response.Write(@Session["superadmin"]);
+            //Response.Write(@Session["superadmin"]);
 
             LblWarning.Visible = false;
 

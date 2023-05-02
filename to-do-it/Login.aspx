@@ -18,7 +18,7 @@
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                        <div class="card  text-white shadow-lg" style="border-radius: 1rem;" id="login">
+                        <div class="card bg-dark text-white shadow-lg" style="border-radius: 1rem;" id="login">
                             <div class="card-body p-5 text-center">
 
                                 <div class="mb-md-5 mt-md-4 pb-5" >
@@ -27,12 +27,12 @@
 
                                     <%--    Kullanıcı adı--%>
                                     <div class="form-outline form-white mb-4">
-                                        <asp:TextBox ID="TxtUsername" runat="server" class="form-control border-secondary" placeholder="Username "></asp:TextBox>
+                                        <asp:TextBox ID="TxtUsername" runat="server" class="form-control border-secondary" placeholder="Username" autocomplete="off"></asp:TextBox>
                                     </div>
 
                                     <%--    Şifre   --%>
                                     <div class="form-outline form-white mb-4">
-                                        <asp:TextBox ID="TxtPassword" runat="server" class="form-control border-secondary" placeholder="Password" type="password"></asp:TextBox>
+                                        <asp:TextBox ID="TxtPassword" runat="server" class="form-control border-secondary" placeholder="Password" type="password" autocomplete="off"></asp:TextBox>
                                     </div>
 
                                     <asp:Button ID="BtnLogin" runat="server" Text="Login" class="btn btn-outline-light btn-lg px-5 mt-4" OnClick="BtnLogin_Click" />

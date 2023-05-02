@@ -28,20 +28,20 @@
 
                                         <%--    Kullanıcı adı  --%>
                                         <div class="form-outline form-white mb-4">
-                                            <asp:TextBox ID="TxtUsername" runat="server" class="form-control border-secondary" placeholder="Username"></asp:TextBox>
+                                            <asp:TextBox ID="TxtUsername" runat="server" class="form-control border-secondary" placeholder="Username" autocomplete="off"></asp:TextBox>
                                         </div>
 
                                         <%--   E-mail   --%>
 
                                         <div class="form-outline form-white mb-4">
-                                            <asp:TextBox ID="TxtEmail" runat="server" class="form-control border-secondary" placeholder="E-mail Adress"></asp:TextBox>
+                                            <asp:TextBox ID="TxtEmail" runat="server" class="form-control border-secondary" placeholder="E-mail Adress" autocomplete="off"></asp:TextBox>
                                         </div>
 
 
 
                                         <%--   Şifre  --%>
                                         <div class="form-outline form-white mb-4">
-                                            <asp:TextBox ID="TxtPassword" runat="server" class="form-control border-secondary" placeholder="Password" type="password"></asp:TextBox>
+                                            <asp:TextBox ID="TxtPassword" runat="server" class="form-control border-secondary" placeholder="Password" type="password" autocomplete="off"></asp:TextBox>
                                         </div>
 
                                         <%--    Kayıt ol butonu--%>

@@ -12,14 +12,14 @@
             <div class="border border-dark rounded pl-3 pt-3 pb-3" onmouseover="changeColor('#596e79')" onmouseout="changeColor('#dfcdc3')">
                 <h1 class="" id="text"><b>Remembering<br />
                     has  never  been easier.</b></h1>
-                <p class="mt-2">
+                <p class="mt-2" id="new">
                     Our website that will make your life easier is online. You can access it with your phone, tablet or computer.
                 </p>
             </div>
 
             <%--    Şimdi dene   --%>
 
-            <div class="mt-5">
+            <div class="mt-5" id="welcome">
                 <asp:Button ID="tryIt" runat="server" Text="Now try it." CssClass="btn btn-dark btn-lg" OnClick="tryIt_Click" />
             </div>
 

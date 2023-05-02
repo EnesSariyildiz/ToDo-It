@@ -6,6 +6,9 @@
     /*background-color: #c7b198;*/
 }
 
+#new {
+    font-family:'Rubik Light';
+}
 .col-md-2 {
     overflow: hidden;
 }
@@ -17,7 +20,7 @@
 
 
 #tanitim {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rubik Light';
 }
 
 
@@ -34,7 +37,7 @@
 
 
 #text {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rubik Light';
 }
 
 .btn:hover {
@@ -73,4 +76,25 @@
 
 .title-todo {
     color: #3c4245;
+}
+
+#faq {
+    font-family:'Rubik Light';
+    background-color:#f95959;
+}
+
+#welcome {
+    font-family: 'Rubik Light';
+}
+
+#contact {
+    font-family: 'Rubik Light';
+}
+
+#admin {
+    font-family: 'Rubik Light';
+}
+
+#UserList {
+    font-family: 'Rubik Light';
 }

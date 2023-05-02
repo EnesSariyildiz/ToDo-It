@@ -36,7 +36,7 @@ namespace to_do_it
 
             if (TxtUsername.Text == "admin" && TxtPassword.Text == "1111")
             {
-                Session["superadmin"] = TxtUsername.Text;
+                //Session["superadmin"] = TxtUsername.Text;
                 Response.Redirect("Admin.aspx");
             }
 
